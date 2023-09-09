@@ -21,12 +21,12 @@
                 <li>
                     <a href="index.php">
                         <i class='bx bx-grid-alt'></i>
-                        <span class="link_name">Dashboard</span>
+                        <span class="link_name"> Dashboard </span>
                     </a>
 
                     <hr>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="index.php">Dashboard</a></li>
+                            <li><a class="link_name" href="index.php"> Dashboard </a></li>
                         </ul>
                 </li>
 
@@ -34,27 +34,32 @@
                     <div class="iocn-link">
                         <a href="./index.php?page=project_list">
                             <i class='bx bx-collection'></i>
-                            <span class="link_name" href="./index.php?page=project_list">Projects</span>
+                            <span class="link_name" href="./index.php?page=project_list"> Projects </span>
                         </a>
-
-                        <!--i class='bx bxs-chevron-down arrow'></i-->
                     </div>
 
                     <ul class="sub-menu">
-                        <li><a class="link_name" href="./index.php?page=project_list">Projects</a></li>
-                        <!--li><a href="./index.php?page=n_project">Add Project</a></li>
-                        <!--li><a href="./index.php?page=project_list">View Projects</a></li>
-                        <!--li><a href="manager_pending_project.php">Pending Projects</a></li-->
+                        <li><a class="link_name" href="./index.php?page=project_list"> Projects </a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="./index.php?page=task_list">
-                        <i class='bx bxs-pin'></i>
+                        <i class='bx bx-pin'></i>
                         <span class="link_name">Tasks</span>
                     </a>
                     <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./index.php?page=task_list">Tasks</a></li>
+                        <li><a class="link_name" href="./index.php?page=task_list"> Tasks </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./index.php?page=scholars">
+                        <i class='bx bx-spreadsheet'></i>
+                        <span class="link_name"> Scholars </span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="./index.php?page=scholars"> Scholars </a></li>
                     </ul>
                 </li>
 
@@ -92,17 +97,13 @@
                     <li>
                         <div class="iocn-link">
                             <a href="./index.php?page=user_list">
-                                <i class='bx bxs-user-account'></i>
+                                <i class='bx bx-user'></i>
                                 <span class="link_name" href="./index.php?page=user_list">Users</span>
-                            </a>
-
-                            <!--i class='bx bxs-chevron-down arrow'></i-->
+                            </a> 
                         </div>
 
                         <ul class="sub-menu">
                             <li><a class="link_name" href="./index.php?page=user_list">Users</a></li>
-                            <!--li><a href="./index.php?page=new_user">Add User</a></li>
-                            <li><a href="./index.php?page=user_list">View Users</a></li>-->
                         </ul>
                     </li>
 
@@ -112,29 +113,25 @@
                                 <span class="link_name">Archives</span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=archive">Archives</a></li>
+                            <li><a class="link_name" href="./index.php?page=archive"> Archives </a></li>
                         </ul>
                     </li>
-
-                    <!--div class="profile-details">
-                        <div class="profile-content">
-                            <!--<img src="image/profile.jpg" alt="profileImg">
-                        </div>
-                        <div class="name-job">
-                            <div class="profile_name">NAME</div>
-                            <div class="job">POSITION</div>
-                        </div>
-                            <a href="login.php" class='bx bx-log-out'></a>
-                    </div-->                    
+                
+                    <!-- logout-->
+                    <li>
+                        <a href="login.php">
+                            <i class='bx bx-log-out'></i>
+                                <span class="link_name"> Logout </span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="login.php"> Logout </a></li>
+                        </ul>
+                    </li>
                 </hr>
             </ul>
         </div>
                     
-        <!--section class="home-section"-->
-            <div class="home-content">
-            <!--i class='bx bx-menu' ></i-->
-            <!--span class="text">Drop Down Sidebar</span-->
-            </div>
+            
         </section>
         
         <script>
