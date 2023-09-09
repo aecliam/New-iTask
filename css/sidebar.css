@@ -16,7 +16,7 @@ a{
   top: 0;
   left: 0;
   height: 100%;
-  width: 230px;
+  width: 210px;
   background: #0032A3;
   z-index: 1;
   transition: all 0.5s ease;
@@ -176,7 +176,7 @@ a{
 .sidebar .logout{
     position: fixed;
     bottom: 0;
-    width: 230px;
+    width: 210px;
     display: flex;
     padding: 12px 0;
     transition: 0.5s ease;
