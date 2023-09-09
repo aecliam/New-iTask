@@ -14,7 +14,7 @@
         <div class="sidebar open">
             <div class="logo-details">
                 <i class='bx bx-menu'></i>
-                <span class="logo_name"> TAYTAY YOUTH </span>
+                <span class="logo_name"> TYDO </span>
             </div>
 
             <ul class="nav-links">
@@ -74,9 +74,7 @@
                         <i class='bx bxs-video'></i>
                         <span class="link_name">Conference</span>
                     </a>
-                        <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./index.php?page=conference">Conference</a></li>
-                    </ul>
+                        
                 </li-->
                 
                 <hr>
@@ -108,8 +106,6 @@
                             </a>
                         </div>
                     </li>
-                    
-
                 </hr>
             </ul>
         </div>
