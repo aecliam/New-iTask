@@ -24,10 +24,7 @@
                         <span class="link_name"> Dashboard </span>
                     </a>
 
-                    <hr>
-                        <ul class="sub-menu blank">
-                            <li><a class="link_name" href="index.php"> Dashboard </a></li>
-                        </ul>
+                    <hr>                    
                 </li>
 
                 <li>
@@ -38,39 +35,30 @@
                         </a>
                     </div>
 
-                    <ul class="sub-menu">
-                        <li><a class="link_name" href="./index.php?page=project_list"> Projects </a></li>
-                    </ul>
                 </li>
 
                 <li>
                     <a href="./index.php?page=task_list">
                         <i class='bx bx-pin'></i>
-                        <span class="link_name">Tasks</span>
+                        <span class="link_name"> Tasks </span>
                     </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./index.php?page=task_list"> Tasks </a></li>
-                    </ul>
+
                 </li>
 
                 <li>
                     <a href="./index.php?page=scholars">
                         <i class='bx bx-spreadsheet'></i>
-                        <span class="link_name"> Scholars </span>
+                        <span class="link_name" href="./index.php?page=scholars"> Scholars </span>
                     </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./index.php?page=scholars"> Scholars </a></li>
-                    </ul>
+
                 </li>
 
                 <li>
                     <a href="./index.php?page=calendar">
                         <i class='bx bx-calendar'></i>
-                        <span class="link_name">Calendar</span>
+                        <span class="link_name" href="./index.php?page=calendar"> Calendar </span>
                     </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./index.php?page=calendar">Calendar</a></li>
-                    </ul>
+
                 </li>
 
                 <li>
@@ -78,9 +66,7 @@
                         <i class='bx bx-message'></i>
                         <span class="link_name">Inbox</span>
                     </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="./index.php?page=inbox">Inbox</a></li>
-                    </ul>
+
                 </li>
 
                 <!--li>
@@ -98,13 +84,10 @@
                         <div class="iocn-link">
                             <a href="./index.php?page=user_list">
                                 <i class='bx bx-user'></i>
-                                <span class="link_name" href="./index.php?page=user_list">Users</span>
+                                <span class="link_name" href="./index.php?page=user_list"> Users </span>
                             </a> 
                         </div>
 
-                        <ul class="sub-menu">
-                            <li><a class="link_name" href="./index.php?page=user_list">Users</a></li>
-                        </ul>
                     </li>
 
                     <li>
@@ -112,21 +95,21 @@
                             <i class='bx bx-archive'></i>
                                 <span class="link_name">Archives</span>
                         </a>
-                        <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=archive"> Archives </a></li>
-                        </ul>
+
                     </li>
                 
                     <!-- logout-->
+                    
                     <li>
-                        <a href="login.php">
-                            <i class='bx bx-log-out'></i>
+                        <div class="logout">
+                            <a href="login.php">
+                                <i class='bx bx-log-out'></i>
                                 <span class="link_name"> Logout </span>
-                        </a>
-                        <ul class="sub-menu blank">
-                            <li><a class="link_name" href="login.php"> Logout </a></li>
-                        </ul>
+                            </a>
+                        </div>
                     </li>
+                    
+
                 </hr>
             </ul>
         </div>
