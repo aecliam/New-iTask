@@ -21,7 +21,7 @@ a{
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1037;
+    z-index: 1;
 }
 
 .layout-navbar-fixed .wrapper .main-header {
@@ -29,7 +29,7 @@ a{
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1033;
+    z-index: 1;
 }
 
 @media (min-width: 768px){
@@ -241,6 +241,7 @@ section {
 }
 
 hr {
+  max-width: 0;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
