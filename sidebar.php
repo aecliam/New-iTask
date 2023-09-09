@@ -14,14 +14,14 @@
         <div class="sidebar open">
             <div class="logo-details">
                 <i class='bx bx-menu'></i>
-                <span class="logo_name"> TYDO </span>
+                <span class="logo-name"> TYDO </span>
             </div>
 
             <ul class="nav-links">
                 <li>
                     <a href="index.php">
                         <i class='bx bx-grid-alt'></i>
-                        <span class="link_name"> Dashboard </span>
+                        <span class="link-name"> Dashboard </span>
                     </a>
 
                     <hr>                    
@@ -31,7 +31,7 @@
                     <div class="iocn-link">
                         <a href="./index.php?page=project_list">
                             <i class='bx bx-collection'></i>
-                            <span class="link_name" href="./index.php?page=project_list"> Projects </span>
+                            <span class="link-name" href="./index.php?page=project_list"> Projects </span>
                         </a>
                     </div>
 
@@ -40,7 +40,7 @@
                 <li>
                     <a href="./index.php?page=task_list">
                         <i class='bx bx-pin'></i>
-                        <span class="link_name"> Tasks </span>
+                        <span class="link-name"> Tasks </span>
                     </a>
 
                 </li>
@@ -48,7 +48,7 @@
                 <li>
                     <a href="./index.php?page=scholars">
                         <i class='bx bx-spreadsheet'></i>
-                        <span class="link_name" href="./index.php?page=scholars"> Scholars </span>
+                        <span class="link-name" href="./index.php?page=scholars"> Scholars </span>
                     </a>
 
                 </li>
@@ -56,7 +56,7 @@
                 <li>
                     <a href="./index.php?page=calendar">
                         <i class='bx bx-calendar'></i>
-                        <span class="link_name" href="./index.php?page=calendar"> Calendar </span>
+                        <span class="link-name" href="./index.php?page=calendar"> Calendar </span>
                     </a>
 
                 </li>
@@ -64,7 +64,7 @@
                 <li>
                     <a href="./index.php?page=inbox">
                         <i class='bx bx-message'></i>
-                        <span class="link_name">Inbox</span>
+                        <span class="link-name">Inbox</span>
                     </a>
 
                 </li>
@@ -82,7 +82,7 @@
                         <div class="iocn-link">
                             <a href="./index.php?page=user_list">
                                 <i class='bx bx-user'></i>
-                                <span class="link_name" href="./index.php?page=user_list"> Users </span>
+                                <span class="link-name" href="./index.php?page=user_list"> Users </span>
                             </a> 
                         </div>
 
@@ -91,7 +91,7 @@
                     <li>
                         <a href="./index.php?page=archive">
                             <i class='bx bx-archive'></i>
-                                <span class="link_name">Archives</span>
+                                <span class="link-name">Archives</span>
                         </a>
 
                     </li>
@@ -102,7 +102,7 @@
                         <div class="logout">
                             <a href="login.php">
                                 <i class='bx bx-log-out'></i>
-                                <span class="link_name"> Logout </span>
+                                <span class="link-name"> Logout </span>
                             </a>
                         </div>
                     </li>
