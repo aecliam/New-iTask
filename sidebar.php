@@ -1,6 +1,5 @@
 <html lang="en" dir="ltr">
     <head>
-
         <meta charset="UTF-8">
         <!--<title>  </title>-->
         <link rel="stylesheet" type="text/css" href="css/sidebar.css"/>
@@ -22,60 +21,58 @@
                     <a href="index.php">
                         <i class='bx bx-grid-alt'></i>
                         <span class="link-name"> Dashboard </span>
-                    </a>
-
-                    <hr>                    
+                    </a>                   
                 </li>
 
-                <li>
-                    <div class="iocn-link">
-                        <a href="./index.php?page=project_list">
-                            <i class='bx bx-collection'></i>
-                            <span class="link-name" href="./index.php?page=project_list"> Projects </span>
+                <hr> 
+                    <li>
+                        <div class="iocn-link">
+                            <a href="./index.php?page=project_list">
+                                <i class='bx bx-collection'></i>
+                                <span class="link-name" href="./index.php?page=project_list"> Projects </span>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <a href="./index.php?page=task_list">
+                            <i class='bx bx-pin'></i>
+                            <span class="link-name"> Tasks </span>
                         </a>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
-                    <a href="./index.php?page=task_list">
-                        <i class='bx bx-pin'></i>
-                        <span class="link-name"> Tasks </span>
-                    </a>
+                    <li>
+                        <a href="./index.php?page=scholars">
+                            <i class='bx bx-spreadsheet'></i>
+                            <span class="link-name" href="./index.php?page=scholars"> Scholars </span>
+                        </a>
 
-                </li>
+                    </li>
 
-                <li>
-                    <a href="./index.php?page=scholars">
-                        <i class='bx bx-spreadsheet'></i>
-                        <span class="link-name" href="./index.php?page=scholars"> Scholars </span>
-                    </a>
+                    <li>
+                        <a href="./index.php?page=calendar">
+                            <i class='bx bx-calendar'></i>
+                            <span class="link-name" href="./index.php?page=calendar"> Calendar </span>
+                        </a>
+                    </li>
 
-                </li>
+                    <li>
+                        <a href="./index.php?page=inbox">
+                            <i class='bx bx-message'></i>
+                            <span class="link-name">Inbox</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="./index.php?page=calendar">
-                        <i class='bx bx-calendar'></i>
-                        <span class="link-name" href="./index.php?page=calendar"> Calendar </span>
-                    </a>
-
-                </li>
-
-                <li>
-                    <a href="./index.php?page=inbox">
-                        <i class='bx bx-message'></i>
-                        <span class="link-name">Inbox</span>
-                    </a>
-
-                </li>
-
-                <!--li>
-                    <a href="./index.php?page=conference">
-                        <i class='bx bxs-video'></i>
-                        <span class="link_name">Conference</span>
-                    </a>
-                        
-                </li-->
+                    <!--li>
+                        <a href="./index.php?page=conference">
+                            <i class='bx bxs-video'></i>
+                            <span class="link_name">Conference</span>
+                        </a>
+                            
+                    </li-->
+                </hr>
                 
                 <hr>
                     <li>
@@ -85,13 +82,12 @@
                                 <span class="link-name" href="./index.php?page=user_list"> Users </span>
                             </a> 
                         </div>
-
                     </li>
 
                     <li>
                         <a href="./index.php?page=archive">
                             <i class='bx bx-archive'></i>
-                                <span class="link-name">Archives</span>
+                            <span class="link-name"> Archives </span>
                         </a>
 
                     </li>
@@ -108,10 +104,7 @@
                     </li>
                 </hr>
             </ul>
-        </div>
-                    
-            
-        </section>
+        </div>                    
         
         <script>
             let arrow = document.querySelectorAll(".arrow");
@@ -127,7 +120,7 @@
             sidebarBtn.addEventListener("click", ()=>{
                 sidebar.classList.toggle("close");
             });
-        
         </script>
+
     </body>
 </html>
