@@ -107,25 +107,17 @@
         </div>
 
         <section class="header">
-            <div class="home-content">
-                <a href="index-new.php">
-                    <span class="text"> User </span>
-                </a>
-            </div>
-        </section>
-        
-        <section class="home-section">
-            <div class="home-content">
-                <?php include 'task_management/header.php'?>
-
+            <div class="user">
+            <a href="user-profile.php"> User </a>
                 
             </div>
         </section>
 
         <section class="home-section">    
             <div class="home-content">
- 
-                <?php include 'new-project.php'?>
+                <div class="">
+                    <?php include 'new-project.php'?>
+                </div>
                 
             </div>
         </section>
