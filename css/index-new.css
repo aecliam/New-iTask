@@ -197,6 +197,15 @@ a{
   transition: all 0.5s ease;
 }
 
+.header{
+  position: relative;
+  background: #FE9900;
+  height: 60px;
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+
 .sidebar.close ~ .home-section{
   left: 130px;
   width: calc(100% - 78px);
@@ -228,17 +237,27 @@ a{
   .sidebar.close .nav-links li .sub-menu{
     display: none;
   }
+  
   .sidebar{
     width: 78px;
   }
+
   .sidebar.close{
     width: 0;
   }
+
   .home-section{
     left: 78px;
     width: calc(100% - 78px);
     z-index: 100;
   }
+
+  .header{
+    left: 78px;
+    width: calc(100% - 78px);
+    z-index: 1;
+  }
+
   .sidebar.close ~ .home-section{
     width: 100%;
     left:0;
