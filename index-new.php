@@ -49,7 +49,6 @@
                             <i class='bx bx-spreadsheet'></i>
                             <span class="link-name" href="./index-new.php?page=scholars"> Scholars </span>
                         </a>
-
                     </li>
 
                     <li>
@@ -70,8 +69,7 @@
                         <a href="./index.php?page=conference">
                             <i class='bx bxs-video'></i>
                             <span class="link_name">Conference</span>
-                        </a>
-                            
+                        </a>                        
                     </li-->
                 </hr>
                 
@@ -109,7 +107,7 @@
         
         <section class="home-section">
             <div class="home-content">
-                <?php include 'new-project.php' ?>
+                <?/* php include 'new-project.php' */?>
                 
             </div>
         </section>
