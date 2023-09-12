@@ -105,7 +105,14 @@
                     </li>
                 </hr>
             </ul>
-        </div>                    
+        </div>
+        
+        <section class="home-section">
+            <div class="home-content">
+                <?php include 'new-project.php' ?>
+                
+            </div>
+        </section>
         
         <script>
             let arrow = document.querySelectorAll(".arrow");
