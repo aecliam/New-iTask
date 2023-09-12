@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body class="home-section">
+    <body>
         <div class="sidebar open">
             <div class="logo-details">
                 <i class='bx bx-menu'></i>
@@ -107,7 +107,7 @@
         
         <section class="home-section">
             <div class="home-content">
-                <?/* php include 'new-project.php' */?>
+                <?php include 'new-project.php'?>
                 
             </div>
         </section>
