@@ -14,7 +14,8 @@
             <div class="logo-details">
                 <i class='bx bx-menu'></i>
                 <a href="index-new.php">
-                <span class="logo-name" > TYDO </span></a>
+                    <span class="logo-name" > TYDO </span>
+                </a>
             </div>
 
             <ul class="nav-links">
@@ -104,6 +105,14 @@
                 </hr>
             </ul>
         </div>
+
+        <section class="header">
+            <div class="home-content">
+                <a href="index-new.php">
+                    <span class="text"> User </span>
+                </a>
+            </div>
+        </section>
         
         <section class="home-section">
             <div class="home-content">
