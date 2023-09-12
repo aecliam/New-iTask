@@ -189,7 +189,7 @@ a{
 
 .home-section{
   position: relative;
-  /*background: #F7F7F7;*/
+  /*#F7F7F7;*/
   background: #ffffff;
   height: 100vh;
   left: 260px;
@@ -198,7 +198,7 @@ a{
 }
 
 .sidebar.close ~ .home-section{
-  left: 78px;
+  left: 130px;
   width: calc(100% - 78px);
 }
 
