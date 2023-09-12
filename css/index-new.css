@@ -18,7 +18,7 @@ a{
   height: 100%;
   width: 210px;
   background: #0032A3;
-  z-index: 1;
+  z-index: 100;
   transition: all 0.5s ease;
 }
 
@@ -189,7 +189,8 @@ a{
 
 .home-section{
   position: relative;
-  background: #F7F7F7;
+  /*background: #F7F7F7;*/
+  background: #ffffff;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
