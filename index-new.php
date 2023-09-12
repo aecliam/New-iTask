@@ -107,11 +107,20 @@
         
         <section class="home-section">
             <div class="home-content">
+                <?php include 'task_management/header.php'?>
+
+                
+            </div>
+        </section>
+
+        <section class="home-section">    
+            <div class="home-content">
+ 
                 <?php include 'new-project.php'?>
                 
             </div>
         </section>
-        
+
         <script>
             let arrow = document.querySelectorAll(".arrow");
             for (var i = 0; i < arrow.length; i++) {
