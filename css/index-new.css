@@ -46,7 +46,7 @@ a{
   font-size: 30px;
   color: #fff;
   font-weight: 600;
-  transition: 0.4s ease;
+  transition: 0.3s ease;
 }
 
 .sidebar.close .logo-details .logo-name{
@@ -166,7 +166,7 @@ a{
   top: 0;
   opacity: 1;
   pointer-events: auto;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .sidebar .nav-links li .sub-menu .link-name{
@@ -201,9 +201,13 @@ a{
   position: relative;
   background: #FE9900;
   height: 60px;
-  left: 260px;
-  width: calc(100% - 260px);
-  transition: all 0.5s ease;
+
+}
+
+.user{
+  color: #11101d;
+  font-size: 20px;
+  align-content: right;
 }
 
 .sidebar.close ~ .home-section{
@@ -233,7 +237,7 @@ a{
   font-weight: 600;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 250px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
   }
