@@ -11,8 +11,7 @@
 		<div>
 			<div class="text">
 				<div>
-					<label for=""> Name </label>
-					<input type="text" name="name">
+					<input class="untitled-project" name="title" placeholder="Untitled Project" type="text"/>
 				</div>
 			</div>
 
