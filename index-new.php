@@ -112,14 +112,12 @@
                     <div class="text header text-align">
                         <a href="user-profile.php">
                             <i class='bx bx-user'></i>
-                            <span class="link-name" href="user-profile.php"> Users </span> <!-- change to user account, fetch from db -->
+                            <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
                         </a>
                     </div>
                 </div>
             </section>
-
-                         
-        
+                        
         <section class="home-section">    
             <div class="home-content">
                 <div class="">
