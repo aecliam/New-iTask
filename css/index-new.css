@@ -9,6 +9,7 @@
 
 a{
   text-decoration: none;
+  color: #ffffff;
 }
 
 .sidebar{
@@ -198,16 +199,18 @@ a{
 }
 
 .header{
+  width: 100%;
   position: relative;
   background: #FE9900;
   height: 60px;
-
+  left: 0px;
 }
 
-.user{
-  color: #11101d;
-  font-size: 20px;
-  align-content: right;
+.text-align{
+  position: fixed;
+  text-align: right;
+  padding-top: .5%;
+  padding-right: 2%;
 }
 
 .sidebar.close ~ .home-section{
@@ -258,7 +261,6 @@ a{
 
   .header{
     left: 78px;
-    width: calc(100% - 78px);
     z-index: 1;
   }
 
