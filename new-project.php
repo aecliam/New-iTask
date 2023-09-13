@@ -1,3 +1,7 @@
+<meta charset="UTF-8">
+        <!--<title>  </title>-->
+        <link rel="stylesheet" type="text/css" href="css/index-new.css"/>
+
 <div>
 	<div>
 		<div>
@@ -5,7 +9,7 @@
 
         <input type="hidden" name="id">
 		<div>
-			<div>
+			<div class="text">
 				<div>
 					<label for=""> Name </label>
 					<input type="text" name="name">
