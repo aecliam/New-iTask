@@ -48,7 +48,7 @@
                     <li>
                         <a href="./index-new.php?page=scholars">
                             <i class='bx bx-spreadsheet'></i>
-                            <span class="link-name" href="./index-new.php?page=scholars"> Scholars </span>
+                            <span class="link-name" href="scholars.php"> Scholars </span>
                         </a>
                     </li>
 
