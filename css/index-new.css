@@ -17,7 +17,7 @@ a{
   top: 0;
   left: 0;
   height: 100%;
-  width: 210px;
+  width: 220px;
   background: #0032A3;
   z-index: 100;
   transition: all 0.5s ease;
@@ -51,6 +51,7 @@ a{
 }
 
 .sidebar.close .logo-details .logo-name{
+  transition-delay: 0s;
   opacity: 0;
   pointer-events: none;
 }
@@ -83,6 +84,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .sidebar.close .nav-links li .iocn-link{
@@ -127,9 +129,9 @@ a{
 }
 
 .sidebar .nav-links li .sub-menu{
-  padding: 6px 6px 14px 80px;
-  margin-top: -10px;
-  background: #1d1b31;
+  padding: 6px 6px 10px 60px;
+  margin-top: -2px;
+  background: #00257A;
   display: none;
 }
 
@@ -167,21 +169,40 @@ a{
   top: 0;
   opacity: 1;
   pointer-events: auto;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .sidebar .nav-links li .sub-menu .link-name{
   display: none;
 }
 
+.sidebar.close .nav-links li .sub-menu .link-name .logout{
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank .logout{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank .logout{
+  top: 50%;
+  transform: translate(-50%);
+}
+
 .sidebar .logout{
-    position: fixed;
-    bottom: 0;
-    width: 210px;
-    display: flex;
-    padding: 12px 0;
-    transition: 0.5s ease;
-    background: #00257A;
+  position: fixed;
+  bottom: 0;
+  width: 220px;
+  display: flex;
+  padding: 12px 0;
+  transition: all 0.5s ease;
+  background: #00257A;
 }
 
 .sidebar.close .logout{
@@ -190,7 +211,6 @@ a{
 
 .home-section{
   position: relative;
-  /*#F7F7F7;*/
   background: #ffffff;
   height: 100vh;
   left: 260px;
@@ -268,7 +288,8 @@ a{
     width: 100%;
     left:0;
   }
-  }
+
+}
 
 .navbar #sidebar-close {
     cursor: pointer;
