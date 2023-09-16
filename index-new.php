@@ -56,8 +56,7 @@
                             <i class='bx bxs-chevron-down arrow' ></i>
                         </div>
                         <ul class="sub-menu">
-                            
-                            <li><a href=""> Junior Highschool </a></li>
+                            <li><a class="link_name" href=""> Junior Highschool </a></li>
                             <li><a href=""> Senior Highschool </a></li>
                             <li><a href=""> College </a></li>
                             <li><a href=""> Graduate School </a></li>
