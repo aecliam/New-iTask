@@ -56,7 +56,7 @@
                             <i class='bx bxs-chevron-down arrow' ></i>
                         </div>
                         <ul class="sub-menu">
-                            <li><a class="link_name" href="scholars.php"> Scholars </a></li>
+                            
                             <li><a href=""> Junior Highschool </a></li>
                             <li><a href=""> Senior Highschool </a></li>
                             <li><a href=""> College </a></li>
