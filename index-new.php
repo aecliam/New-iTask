@@ -56,7 +56,7 @@
                             <i class='bx bxs-chevron-down arrow' ></i>
                         </div>
                         <ul class="sub-menu">
-                            <li><a class="link_name" href=""> Junior Highschool </a></li>
+                            <li><a href=""> Junior Highschool </a></li>
                             <li><a href=""> Senior Highschool </a></li>
                             <li><a href=""> College </a></li>
                             <li><a href=""> Graduate School </a></li>
@@ -92,7 +92,7 @@
                             <span class="link-name"> Conference </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=conference"> Conference </span>
+                            <li><a class="link_name" href="./index-new.php?page=conference"> Conference </span>
                         </ul>
                     </li> -->
                 </hr>
@@ -104,7 +104,7 @@
                             <span class="link-name"> Users </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=user_list"> Users </span>
+                            <li><a class="link_name" href="./index-new.php?page=user_list"> Users </span>
                         </ul>
                     </li>
 
@@ -114,7 +114,7 @@
                             <span class="link-name"> Archives </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=archive"> Archives </span>
+                            <li><a class="link_name" href="./index-new.php?page=archive"> Archives </span>
                         </ul>
                     </li>
                 
