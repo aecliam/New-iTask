@@ -2,69 +2,34 @@
         <!--<title>  </title>-->
         <!-- <link rel="stylesheet" type="text/css" href="css/calendar.css"/>-->
 
-<?php
-    $month = isset($_GET['month']) ? $_GET['month'] : date('m');
-    $year = isset($_GET['year']) ? $_GET['year'] : date('Y');
+<?php 
+    
+    echo "</table>"; 
 
-    $nextMonth = $month + 1;
-    $prevMonth = $month - 1;
-    $nextYear = $year;
-    $prevYear = $year;
+    $month = date('m');
+    $year = date('Y');
+    $daysInMonth = date('t');
+    $firstDayOfMonth = date('N', mktime(0, 0, 0, $month, 1, $year));
 
-    if ($nextMonth > 12) {
-        $nextMonth = 1;
-        $nextYear++;
+    echo "<h1>" . date('F, Y') . "</h1>";
+    echo "<table>";
+    echo "<tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr>";
+    echo "<tr>";
+
+    // Print empty cells until we reach the first day of the month
+    for ($i = 1; $i < $firstDayOfMonth; $i++) {
+        echo "<td></td>";
     }
 
-    if ($prevMonth < 1) {
-        $prevMonth = 12;
-        $prevYear--;
-    }
-
-    $daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year);
-
-    $monthName = date('F', mktime(0, 0, 0, $month, 10)); // Get the month name
-
-    echo " $monthName $year "; // Display the month name and year
-
-    echo "<br>";
-
-    echo "<a class='text' href='?month=$prevMonth&year=$prevYear'>Previous Month</a>";
-    echo "<a class='text' href='?month=$nextMonth&year=$nextYear'>Next Month</a>";
-
-    echo "<table class='text'>";
-    echo "<tr>
-            <th>Sun</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-        </tr>";
-
+    // Print the days of the month
     for ($day = 1; $day <= $daysInMonth; $day++) {
-        $date = strtotime("$year-$month-$day");
-        $dayOfWeek = date('w', $date);
-
-        if ($day == 1) {
-            echo "<tr>";
-            if ($dayOfWeek > 0) {
-                echo str_repeat("<td></td>", $dayOfWeek);
-            }
-        }
-
         echo "<td>$day</td>";
-
-        if ($dayOfWeek == 6) {
-            echo "</tr>";
-        }
-
-        if ($day == $daysInMonth && $dayOfWeek < 6) {
-            echo str_repeat("<td></td>", 6 - $dayOfWeek);
-            echo "</tr>";
+        if ((($day + $firstDayOfMonth - 1) % 7 == 0) && ($day != $daysInMonth)) {
+            echo "</tr><tr>";
         }
     }
 
+    echo "</tr>";
     echo "</table>";
+
 ?>
