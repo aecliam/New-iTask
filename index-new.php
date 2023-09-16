@@ -23,65 +23,90 @@
                     <a href="index-new.php">
                         <i class='bx bx-grid-alt'></i>
                         <span class="link-name"> Dashboard </span>
-                    </a>                   
+                    </a>
                 </li>
 
                 <hr> 
                     <li>
-                        <div class="iocn-link">
-                            <a href="./index-new.php?page=project_list">
-                                <i class='bx bx-collection'></i>
-                                <span class="link-name" href="./index-new.php?page=project_list"> Projects </span>
-                            </a>
-                        </div>
-
+                        <a href="./index-new.php?page=project_list">
+                            <i class='bx bx-collection'></i>
+                            <span class="link-name"> Projects </span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index-new.php?page=project_list"> Projects </a></li>
+                        </ul>
                     </li>
 
                     <li>
                         <a href="./index-new.php?page=task_list">
                             <i class='bx bx-pin'></i>
-                            <span class="link-name" href="./index-new.php?page=tasks"> Tasks </span>
+                            <span class="link-name"> Tasks </span>
                         </a>
-
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index-new.php?page=tasks"> Tasks </span>
+                        </ul>
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=scholars">
-                            <i class='bx bx-spreadsheet'></i>
-                            <span class="link-name" href="scholars.php"> Scholars </span>
-                        </a>
+                        <div class="iocn-link">
+                            <a href="./index-new.php?page=scholars">
+                                <i class='bx bx-spreadsheet'></i>
+                                <span class="link-name" href="scholars.php"> Scholars </span>
+                            </a>
+                            <i class='bx bxs-chevron-down arrow' ></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a class="link_name" href="scholars.php"> Scholars </a></li>
+                            <li><a href=""> Junior Highschool </a></li>
+                            <li><a href=""> Senior Highschool </a></li>
+                            <li><a href=""> College </a></li>
+                            <li><a href=""> Graduate School </a></li>
+                            <li><a href=""> ALS </a></li>
+                            <li><a href=""> Athlete </a></li>
+                            <li><a href=""> Artist </a></li>
+                        </ul>
                     </li>
 
                     <li>
                         <a href="./index-new.php?page=calendar">
                             <i class='bx bx-calendar'></i>
-                            <span class="link-name" href="./index-new.php?page=calendar"> Calendar </span>
+                            <span class="link-name"> Calendar </span>
                         </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index-new.php?page=calendar"> Calendar </span>
+                        </ul>
                     </li>
 
                     <li>
                         <a href="./index-new.php?page=inbox">
                             <i class='bx bx-message'></i>
-                            <span class="link-name">Inbox</span>
+                            <span class="link-name"> Inbox </span>
                         </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index-new.php?page=inbox"> Inbox </span>
+                        </ul>
                     </li>
 
-                    <!--li>
+                    <!-- <li>
                         <a href="./index.php?page=conference">
                             <i class='bx bxs-video'></i>
-                            <span class="link_name">Conference</span>
-                        </a>                        
-                    </li-->
+                            <span class="link-name"> Conference </span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index.php?page=conference"> Conference </span>
+                        </ul>
+                    </li> -->
                 </hr>
                 
                 <hr>
                     <li>
-                        <div class="iocn-link">
-                            <a href="./index.php?page=user_list">
-                                <i class='bx bx-user'></i>
-                                <span class="link-name" href="./index.php?page=user_list"> Users </span>
-                            </a> 
-                        </div>
+                        <a href="./index.php?page=user_list">
+                            <i class='bx bx-user'></i>
+                            <span class="link-name"> Users </span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index.php?page=user_list"> Users </span>
+                        </ul>
                     </li>
 
                     <li>
@@ -89,7 +114,9 @@
                             <i class='bx bx-archive'></i>
                             <span class="link-name"> Archives </span>
                         </a>
-
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="./index.php?page=archive"> Archives </span>
+                        </ul>
                     </li>
                 
                     <!-- logout-->
@@ -100,28 +127,31 @@
                                 <i class='bx bx-log-out'></i>
                                 <span class="link-name"> Logout </span>
                             </a>
+                            <ul class="sub-menu blank">
+                                <li><a class="link_name" href="login.php"> Logout </span>
+                            </ul>
                         </div>
                     </li>
                 </hr>
             </ul>
         </div>
-        
-        
-            <section class="home-section">
-                <div class="home-content">
-                    <div class="text header text-align">
-                        <a href="user-profile.php">
-                            <i class='bx bx-user'></i>
-                            <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
-                        </a>
-                    </div>
+
+        <section class="home-section">
+            <div class="home-content">
+                <div class="text header text-align">
+                    <a href="user-profile.php">
+                        <i class='bx bx-user'></i>
+                        <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
                         
         <section class="home-section">    
             <div class="home-content">
                 <div class="">
-                    <?php include 'new-project.php'?>
+                    <?php include 'calendar.php'?>
+
                 </div>
                 
             </div>
