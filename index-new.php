@@ -149,7 +149,7 @@
         <section class="home-section">    
             <div class="home-content">
                 <div class="">
-                    <?php include 'calendar.php'?>
+                    <?php //include 'calendar.php'?>
 
                 </div>
                 
