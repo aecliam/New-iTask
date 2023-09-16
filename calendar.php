@@ -11,8 +11,6 @@
         <input type="submit" value="Add Event">
     </form>
 
-
-
     <?php
         $month = empty($_GET['month']) ? date('m') : $_GET['month'];
         $year = empty($_GET['year']) ? date('Y') : $_GET['year'];
