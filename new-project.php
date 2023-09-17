@@ -93,9 +93,9 @@
     project_id INT,
     task_name VARCHAR(255),
     status ENUM('completed', 'in_progress', 'not_started')
-	); -->
+	); grabe --> 
 
-	<?php
+	<?php 
 		/* $host = 'localhost';
 		$db   = 'database_name';
 		$user = 'username';
