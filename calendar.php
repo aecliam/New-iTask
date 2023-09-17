@@ -26,7 +26,7 @@
 
         echo "<h1>" . date('F, Y', mktime(0, 0, 0, $month, 1, $year)) . "</h1>";
         echo "<a class='text' href='?month=$prevMonth&year=$prevYear'> Prev Month </a>
-                | <a class='text' href='?month=$nextMonth&year=$nextYear'> Next Month </a>";
+              <a class='text' href='?month=$nextMonth&year=$nextYear'> Next Month </a>";
         echo "<table>";
         echo "<tr>
                 <th>Mon</th>
