@@ -2,69 +2,69 @@
         <!--<title>  </title>-->
         <!-- <link rel="stylesheet" type="text/css" href="css/calendar.css"/>-->
 
-<?php
-    $month = isset($_GET['month']) ? $_GET['month'] : date('m');
-    $year = isset($_GET['year']) ? $_GET['year'] : date('Y');
 
-    $nextMonth = $month + 1;
-    $prevMonth = $month - 1;
-    $nextYear = $year;
-    $prevYear = $year;
+    <form action="add_event.php" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event">
+        <input type="submit" value="Add Event">
+    </form>
 
-    if ($nextMonth > 12) {
-        $nextMonth = 1;
-        $nextYear++;
-    }
+    <?php
+        $month = empty($_GET['month']) ? date('m') : $_GET['month'];
+        $year = empty($_GET['year']) ? date('Y') : $_GET['year'];
 
-    if ($prevMonth < 1) {
-        $prevMonth = 12;
-        $prevYear--;
-    }
+        $nextMonth = $month == 12 ? 1 : $month + 1;
+        $nextYear = $month == 12 ? $year + 1 : $year;
 
-    $daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+        $prevMonth = $month == 1 ? 12 : $month - 1;
+        $prevYear = $month == 1 ? $year - 1 : $year;
 
-    $monthName = date('F', mktime(0, 0, 0, $month, 10)); // Get the month name
+        $daysInMonth = date('t', mktime(0, 0, 0, $month, 1, $year));
+        $firstDayOfMonth = date('N', mktime(0, 0, 0, $month, 1, $year));
 
-    echo " $monthName $year "; // Display the month name and year
+        echo "<h1>" . date('F, Y', mktime(0, 0, 0, $month, 1, $year)) . "</h1>";
+        echo "<a class='text' href='?month=$prevMonth&year=$prevYear'> Prev Month </a>
+                | <a class='text' href='?month=$nextMonth&year=$nextYear'> Next Month </a>";
+        echo "<table>";
+        echo "<tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>";
+        echo "<tr>";
 
-    echo "<br>";
+        for ($i = 1; $i < $firstDayOfMonth; $i++) {
+            echo "<td></td>";
+        }
 
-    echo "<a class='text' href='?month=$prevMonth&year=$prevYear'>Previous Month</a>";
-    echo "<a class='text' href='?month=$nextMonth&year=$nextYear'>Next Month</a>";
-
-    echo "<table class='text'>";
-    echo "<tr>
-            <th>Sun</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-        </tr>";
-
-    for ($day = 1; $day <= $daysInMonth; $day++) {
-        $date = strtotime("$year-$month-$day");
-        $dayOfWeek = date('w', $date);
-
-        if ($day == 1) {
-            echo "<tr>";
-            if ($dayOfWeek > 0) {
-                echo str_repeat("<td></td>", $dayOfWeek);
+        for ($day = 1; $day <= $daysInMonth; $day++) {
+            echo "<td>$day</td>";
+            if ((($day + $firstDayOfMonth - 1) % 7 == 0) && ($day != $daysInMonth)) {
+                echo "</tr><tr>";
             }
         }
 
-        echo "<td>$day</td>";
+        echo "</tr>";
+        echo "</table>";
 
-        if ($dayOfWeek == 6) {
-            echo "</tr>";
-        }
+        $date = $_POST['date'];
+        $event = $_POST['event'];
 
-        if ($day == $daysInMonth && $dayOfWeek < 6) {
-            echo str_repeat("<td></td>", 6 - $dayOfWeek);
-            echo "</tr>";
-        }
-    }
+        // Here you would typically add the event to a database
+        // For simplicity, we'll just print it out
 
-    echo "</table>";
-?>
+        echo "Event '$event' added on $date";
+        
+
+
+    ?>
+
+
+
+

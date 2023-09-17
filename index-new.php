@@ -56,13 +56,13 @@
                             <i class='bx bxs-chevron-down arrow' ></i>
                         </div>
                         <ul class="sub-menu">
-                            <li><a href=""> Junior Highschool </a></li>
-                            <li><a href=""> Senior Highschool </a></li>
-                            <li><a href=""> College </a></li>
-                            <li><a href=""> Graduate School </a></li>
-                            <li><a href=""> ALS </a></li>
-                            <li><a href=""> Athlete </a></li>
-                            <li><a href=""> Artist </a></li>
+                            <li><a href="./index-new.php?page=scholar-jhs.php"> Junior Highschool </a></li>
+                            <li><a href="./index-new.php?page=scholar-shs.php"> Senior Highschool </a></li>
+                            <li><a href="./index-new.php?page=scholar-college.php"> College </a></li>
+                            <li><a href="./index-new.php?page=scholar-gradsch.php"> Graduate School </a></li>
+                            <li><a href="./index-new.php?page=scholar-als.php"> ALS </a></li>
+                            <li><a href="./index-new.php?page=scholar-athlete.php"> Athlete </a></li>
+                            <li><a href="./index-new.php?page=scholar-artist.php"> Artist </a></li>
                         </ul>
                     </li>
 
@@ -92,29 +92,29 @@
                             <span class="link-name"> Conference </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=conference"> Conference </span>
+                            <li><a class="link_name" href="./index-new.php?page=conference"> Conference </span>
                         </ul>
                     </li> -->
                 </hr>
                 
                 <hr>
                     <li>
-                        <a href="./index.php?page=user_list">
+                        <a href="./index-new.php?page=user_list">
                             <i class='bx bx-user'></i>
                             <span class="link-name"> Users </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=user_list"> Users </span>
+                            <li><a class="link_name" href="./index-new.php?page=user_list"> Users </span>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./index.php?page=archive">
+                        <a href="./index-new.php?page=archive">
                             <i class='bx bx-archive'></i>
                             <span class="link-name"> Archives </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index.php?page=archive"> Archives </span>
+                            <li><a class="link_name" href="./index-new.php?page=archive"> Archives </span>
                         </ul>
                     </li>
                 
@@ -149,7 +149,7 @@
         <section class="home-section">    
             <div class="home-content">
                 <div class="">
-                    <?php include 'calendar.php'?>
+                    <?php //include 'calendar.php'?>
 
                 </div>
                 
