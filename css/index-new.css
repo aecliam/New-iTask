@@ -220,7 +220,7 @@ a{
 
 .header{
   width: 100%;
-  position: relative;
+  position: fixed;
   background: #FE9900;
   height: 60px;
   left: 0px;
