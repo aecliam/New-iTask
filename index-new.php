@@ -53,7 +53,7 @@
                                 <i class='bx bx-spreadsheet'></i>
                                 <span class="link-name" href="scholars.php"> Scholars </span>
                             </a>
-                            <i class='bx bxs-chevron-down arrow' ></i>
+                            <i class='bx bxs-chevron-down arrow'></i>
                         </div>
                         <ul class="sub-menu">
                             <li><a href="./index-new.php?page=scholar-jhs"> Junior Highschool </a></li>

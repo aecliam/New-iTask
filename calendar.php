@@ -2,6 +2,9 @@
         <!--<title>  </title>-->
         <!-- <link rel="stylesheet" type="text/css" href="css/calendar.css"/>-->
 
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <form action="add_event.php" method="post">
         <label for="date">Date:</label>
         <input type="date" id="date" name="date">
@@ -9,6 +12,7 @@
         <input type="text" id="event" name="event">
         <input type="submit" value="Add Event">
     </form>
+
 
     <?php
         $month = empty($_GET['month']) ? date('m') : $_GET['month'];
@@ -24,8 +28,10 @@
         $firstDayOfMonth = date('N', mktime(0, 0, 0, $month, 1, $year));
 
         echo "<h1>" . date('F, Y', mktime(0, 0, 0, $month, 1, $year)) . "</h1>";
-        echo "<a class='text' href='?month=$prevMonth&year=$prevYear'> Prev Month </a>
-              <a class='text' href='?month=$nextMonth&year=$nextYear'> Next Month </a>";
+        echo "<a href='?month=$prevMonth&year=$prevYear'><i class='bx bxs-chevron-left'></i></a> 
+              <a href='?month=".date('m')."&year=".date('Y')."'>Today</a>
+              <a href='?month=$nextMonth&year=$nextYear'><i class='bx bxs-chevron-right'></i></a>";
+              
         echo "<table>";
         echo "<tr>
                 <th>Mon</th>
@@ -35,7 +41,7 @@
                 <th>Fri</th>
                 <th>Sat</th>
                 <th>Sun</th>
-            </tr>";
+             </tr>";
         echo "<tr>";
 
         for ($i = 1; $i < $firstDayOfMonth; $i++) {
@@ -59,10 +65,8 @@
         // For simplicity, we'll just print it out
 
         echo "Event '$event' added on $date";
-        
-
-
     ?>
+
 
 
 
