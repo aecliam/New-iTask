@@ -67,12 +67,12 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=calendar">
+                        <a href="calendar-v2.php">
                             <i class='bx bx-calendar'></i>
                             <span class="link-name"> Calendar </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=calendar"> Calendar </span>
+                            <li><a class="link_name" href="calendar-v2.php"> Calendar </span>
                         </ul>
                     </li>
 
@@ -149,8 +149,7 @@
         <section class="home-section">    
             <div class="home-content">
                 <div class="">
-                    <?php // include 'calendar.php'?>
-
+                
                 </div>
                 
             </div>

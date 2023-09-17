@@ -1,5 +1,12 @@
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <!--<title>  </title>-->
+        <link rel="stylesheet" type="text/css" href="css/calendar-v2.css"/>
+
+        <!-- Boxiocns CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
     <?php
         //$pdo = new PDO('mysql:host=localhost;dbname=test', 'username', 'password');
@@ -34,9 +41,11 @@
         $events = $stmt->fetchAll(); */
 
         echo "<h1>" . date('F Y', mktime(0, 0, 0, $month, 1, $year)) . "</h1>";
-        echo "<a href='?month=$prevMonth&year=$prevYear'><i class='bx bxs-chevron-left'></i></a> 
-              <a href='?month=".date('m')."&year=".date('Y')."'>Today</a>
-              <a href='?month=$nextMonth&year=$nextYear'><i class='bx bxs-chevron-right'></i></a>";
+        echo "<div class=''>";
+            echo "<a class='text' href='?month=$prevMonth&year=$prevYear'><i class='bx bxs-chevron-left'></i></a> 
+                  <a class='text' href='?month=".date('m')."&year=".date('Y')."'>Today</a>
+                  <a class='text' href='?month=$nextMonth&year=$nextYear'><i class='bx bxs-chevron-right'></i></a>";
+        echo "</div>";
 
         echo "<table>";
         echo "<tr>
@@ -98,3 +107,7 @@
         echo "</tr>";
         echo "</table>";
     ?>
+
+    </body>
+    
+
