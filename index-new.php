@@ -56,13 +56,13 @@
                             <i class='bx bxs-chevron-down arrow' ></i>
                         </div>
                         <ul class="sub-menu">
-                            <li><a href="./index-new.php?page=scholar-jhs.php"> Junior Highschool </a></li>
-                            <li><a href="./index-new.php?page=scholar-shs.php"> Senior Highschool </a></li>
-                            <li><a href="./index-new.php?page=scholar-college.php"> College </a></li>
-                            <li><a href="./index-new.php?page=scholar-gradsch.php"> Graduate School </a></li>
-                            <li><a href="./index-new.php?page=scholar-als.php"> ALS </a></li>
-                            <li><a href="./index-new.php?page=scholar-athlete.php"> Athlete </a></li>
-                            <li><a href="./index-new.php?page=scholar-artist.php"> Artist </a></li>
+                            <li><a href="./index-new.php?page=scholar-jhs"> Junior Highschool </a></li>
+                            <li><a href="./index-new.php?page=scholar-shs"> Senior Highschool </a></li>
+                            <li><a href="./index-new.php?page=scholar-college"> College </a></li>
+                            <li><a href="./index-new.php?page=scholar-gradsch"> Graduate School </a></li>
+                            <li><a href="./index-new.php?page=scholar-als"> ALS </a></li>
+                            <li><a href="./index-new.php?page=scholar-athlete"> Athlete </a></li>
+                            <li><a href="./index-new.php?page=scholar-artist"> Artist </a></li>
                         </ul>
                     </li>
 
@@ -149,7 +149,7 @@
         <section class="home-section">    
             <div class="home-content">
                 <div class="">
-                    <?php include 'calendar.php'?>
+                    <?php // include 'calendar.php'?>
 
                 </div>
                 

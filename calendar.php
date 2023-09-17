@@ -2,7 +2,6 @@
         <!--<title>  </title>-->
         <!-- <link rel="stylesheet" type="text/css" href="css/calendar.css"/>-->
 
-
     <form action="add_event.php" method="post">
         <label for="date">Date:</label>
         <input type="date" id="date" name="date">
