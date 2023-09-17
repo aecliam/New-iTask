@@ -33,7 +33,7 @@
         $stmt->execute([$month, $year]);
         $events = $stmt->fetchAll(); */
 
-        echo "<h1>" . date('F, Y', mktime(0, 0, 0, $month, 1, $year)) . "</h1>";
+        echo "<h1>" . date('F Y', mktime(0, 0, 0, $month, 1, $year)) . "</h1>";
         echo "<a href='?month=$prevMonth&year=$prevYear'><i class='bx bxs-chevron-left'></i></a> 
               <a href='?month=".date('m')."&year=".date('Y')."'>Today</a>
               <a href='?month=$nextMonth&year=$nextYear'><i class='bx bxs-chevron-right'></i></a>";
