@@ -12,20 +12,6 @@ a{
   color: #ffffff;
 }
 
-h1{
-  font-size: 70px;
-}
-
-th{
-  font-size: 25px;
-  padding: 17px;
-}
-
-td{
-  text-align: center;
-  padding: 10px
-}
-
 .status{
   position: absolute;
   top: 0px;
@@ -209,7 +195,6 @@ td{
 .text{
   color: #11101d;
   font-size: 35px;
-  justify-content: space-between;
 }
 
 .bx-menu{
