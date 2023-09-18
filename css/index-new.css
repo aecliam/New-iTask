@@ -21,6 +21,9 @@ a{
   background: #0032A3;
   z-index: 100;
   transition: all 0.5s ease;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
 }
 
 .sidebar.close{
@@ -203,6 +206,7 @@ a{
   padding: 12px 0;
   transition: all 0.5s ease;
   background: #00257A;
+  border-bottom-right-radius: 25px;
 }
 
 .sidebar.close .logout{
@@ -261,11 +265,11 @@ a{
 }
 
 @media (max-width: 250px) {
-  .sidebar.close .nav-links li .sub-menu{
+  .sidebar.close .nav-links li .sub-menu .content-wrapper{
     display: none;
   }
   
-  .sidebar{
+  .sidebar .logout{
     width: 78px;
   }
 
@@ -280,7 +284,8 @@ a{
   }
 
   .header{
-    left: 78px;
+    position: relative;
+    width: 100%;
     z-index: 1;
   }
 
@@ -288,9 +293,33 @@ a{
     width: 100%;
     left:0;
   }
-
 }
 
 .navbar #sidebar-close {
     cursor: pointer;
 }
+
+.wrapper{
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+@media (min-width: 768px){
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+    /*transition: margin-left .3s ease-in-out;*/
+    margin-left: 250px;
+}}
+
+.content-wrapper>.content {
+  padding: 0 0.5rem;
+}
+
+.separator{
+  position: relative;
+  width: 95%;
+}
+

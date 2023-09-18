@@ -67,12 +67,12 @@
                     </li>
 
                     <li>
-                        <a href="calendar-v2.php">
+                        <a href="calendar.php">
                             <i class='bx bx-calendar'></i>
                             <span class="link-name"> Calendar </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="calendar-v2.php"> Calendar </span>
+                            <li><a class="link_name" href="calendar.php"> Calendar </span>
                         </ul>
                     </li>
 
@@ -136,24 +136,24 @@
         </div>
 
         <section class="home-section">
-            <div class="home-content">
+            <div class="wrapper">
                 <div class="text header text-align">
                     <a href="user-profile.php">
                         <i class='bx bx-user'></i>
                         <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
                     </a>
                 </div>
-            </div>
-        </section>
-                        
-        <section class="home-section">    
-            <div class="home-content">
-                <div class="">
+            
+                <hr class="separator">
+                <?php include 'calendar.php'?>
+
+                <hr class="separator">
+
+                <?php include 'new-project.php'?>
                 
-                </div>
-                
+
             </div>
-        </section>
+        </section>                
 
         <script>
             let arrow = document.querySelectorAll(".arrow");
@@ -170,6 +170,5 @@
                 sidebar.classList.toggle("close");
             });
         </script>
-
     </body>
 </html>

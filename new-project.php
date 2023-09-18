@@ -1,7 +1,7 @@
 <body>
 <meta charset="UTF-8">
         <!--<title>  </title>-->
-        <link rel="stylesheet" type="text/css" href="css/new-project.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="css/new-project.css"/> -->
 
 	<div>
 		<div>
@@ -103,7 +103,7 @@
 		$charset = 'utf8mb4'; 
 
 		$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-		$pdo = new PDO($dsn, $user, $pass); */
+		$pdo = new PDO($dsn, $user, $pass); 
 
 		$projectId = 1; // Replace with your project ID
 
@@ -116,7 +116,7 @@
 		$completedTasks = isset($tasks['completed']) ? $tasks['completed'] : 0;
 
 		$progress = $totalTasks > 0 ? ($completedTasks / $totalTasks) * 100 : 0;
-	?>
+	*/?>
 
 	<div class="progress-bar">
 		<div class="progress-bar-inner" style="width: <?php echo $progress; ?>%"></div>
