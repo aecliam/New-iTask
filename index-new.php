@@ -51,18 +51,18 @@
                         <div class="iocn-link">
                             <a href="./index-new.php?page=scholars">
                                 <i class='bx bx-spreadsheet'></i>
-                                <span class="link-name" href="scholars.php"> Scholars </span>
+                                <span class="link-name "> Scholars </span>
                             </a>
                             <i class='bx bxs-chevron-down arrow'></i>
                         </div>
                         <ul class="sub-menu">
-                            <li><a href="./index-new.php?page=scholar-jhs"> Junior Highschool </a></li>
-                            <li><a href="./index-new.php?page=scholar-shs"> Senior Highschool </a></li>
-                            <li><a href="./index-new.php?page=scholar-college"> College </a></li>
-                            <li><a href="./index-new.php?page=scholar-gradsch"> Graduate School </a></li>
-                            <li><a href="./index-new.php?page=scholar-als"> ALS </a></li>
-                            <li><a href="./index-new.php?page=scholar-athlete"> Athlete </a></li>
-                            <li><a href="./index-new.php?page=scholar-artist"> Artist </a></li>
+                            <li><a href="scholars_jhs.php"> Junior Highschool </a></li>
+                            <li><a href="scholars_shs.php"> Senior Highschool </a></li>
+                            <li><a href="scholars_clg.php"> College </a></li>
+                            <li><a href="scholars_grad.php"> Graduate School </a></li>
+                            <li><a href="scholars_als.php"> ALS </a></li>
+                            <li><a href="scholars_ath.php"> Athlete </a></li>
+                            <li><a href="scholars_art.php"> Artist </a></li>
                         </ul>
                     </li>
 
@@ -143,14 +143,14 @@
                         <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
                     </a>
                 </div>
-            
+            <!--
                 <hr class="separator">
-                <?php include 'calendar.php'?>
+                <//?php include 'calendar.php'?>
 
                 <hr class="separator">
 
-                <?php include 'new-project.php'?>
-                
+                <//?php include 'new-project.php'?>
+            -->
 
             </div>
         </section>                
