@@ -13,7 +13,7 @@
 
       <div class="body">
 
-        <form method="POST" action="index.php">
+        <form method="POST" action="index-new.php">
 
           <div class="form">
             <div>
