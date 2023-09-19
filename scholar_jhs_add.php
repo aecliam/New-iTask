@@ -1,5 +1,6 @@
 <!-- Add -->
 <?php
+
     include 'conn.php';
 
 	if(isset($_POST['add'])){
@@ -38,6 +39,10 @@
 ?>
 
 <html>
+  <body>
+  <?php include 'sidebar.php'; ?>
+  <div  class="sidebar open">
+
         <h4><b>Add Student</b></h4>
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST">
@@ -126,4 +131,6 @@
         </div>
     </div>
 </div>
+</div>
+</body>
 </html>

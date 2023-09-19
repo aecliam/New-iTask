@@ -28,12 +28,12 @@
 
                 <hr> 
                     <li>
-                        <a href="./index-new.php?page=project_list">
+                        <a href="project-list.php">
                             <i class='bx bx-collection'></i>
                             <span class="link-name"> Projects </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=project_list"> Projects </a></li>
+                            <li><a class="link_name" href="project-list.php"> Projects </a></li>
                         </ul>
                     </li>
 
@@ -136,10 +136,12 @@
         </div>
 
         <section class="home-section">
+
+        <?php include 'header.php'?>
         
             <div class="wrapper">
 
-            <?php include 'header.php'?>
+            
                 
                  <div class="project">
                     <?php include 'calendar.php'?>

@@ -1,8 +1,8 @@
 <div class="text header text-align">
-                    <!--<form method="POST" action="admin_reservation_logs.php">
+                    <form method="POST" action="admin_reservation_logs.php">
                         <input type="search" name="search" placeholder="Search here">
                         <input type="submit" name="submit" value="Search">
-                    </form>-->
+                    </form>
 
                     <a href="user-profile.php">
                         <i class='bx bx-user'></i>
