@@ -7,6 +7,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+  background: #F3F1EF;
+}
+
 a{
   text-decoration: none;
   color: #ffffff;
@@ -215,7 +219,6 @@ a{
 
 .home-section{
   position: relative;
-  background: #ffffff;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -224,7 +227,7 @@ a{
 
 .header{
   width: 100%;
-  position: fixed;
+  position: static;
   background: #FE9900;
   height: 60px;
   left: 0px;
@@ -323,6 +326,18 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
   position: relative;
   width: 95%;
   margin-top: 5%;
+}
+
+.project{
+  margin: 15px;
+  border-radius: 23px;
+  background: #ffffff;
+
+}
+
+input{
+  border-radius: 10px;
+  stroke: .5px;
 }
 
 

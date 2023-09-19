@@ -67,7 +67,7 @@
                     </li>
 
                     <li>
-                        <a href="calendar.php">
+                        <a href="./index-new.php?page=calendar">
                             <i class='bx bx-calendar'></i>
                             <span class="link-name"> Calendar </span>
                         </a>
@@ -143,14 +143,17 @@
                         <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
                     </a>
                 </div>
-            <!--
-                <hr class="separator">
-                <//?php include 'calendar.php'?>
+            
+                <div class="project">
+                    <?php include 'calendar.php'?>
+                </div>
 
                 <hr class="separator">
 
-                <//?php include 'new-project.php'?>
-            -->
+                <div class="project">
+                <?php include 'new-project.php'?>
+                </div>
+            
 
             </div>
         </section>                
