@@ -1,6 +1,8 @@
 <!-- Add -->
 <?php
+
     include 'conn.php';
+    include 'index-new.php';
 
 	if(isset($_POST['add'])){
         $firstname = $_POST['firstname'];
@@ -38,6 +40,27 @@
 ?>
 
 <html>
+<<<<<<< HEAD
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <!--<title>  </title>-->
+        <link rel="stylesheet" type="text/css" href="css/index-new.css"/>
+        <link rel="stylesheet" type="text/css" href="css/scholar.css"/>
+
+        <!-- Boxiocns CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content-wrapper">
+=======
+  <body>
+  <?php include 'sidebar.php'; ?>
+  <div  class="sidebar open">
+
+>>>>>>> b693b1757c5d2bfc27fcc2ecdeeb84df1d34519b
         <h4><b>Add Student</b></h4>
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST">
@@ -126,4 +149,9 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
+</div>
+>>>>>>> b693b1757c5d2bfc27fcc2ecdeeb84df1d34519b
+</body>
 </html>

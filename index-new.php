@@ -28,12 +28,12 @@
 
                 <hr> 
                     <li>
-                        <a href="./index-new.php?page=project_list">
+                        <a href="project-list.php">
                             <i class='bx bx-collection'></i>
                             <span class="link-name"> Projects </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=project_list"> Projects </a></li>
+                            <li><a class="link_name" href="project-list.php"> Projects </a></li>
                         </ul>
                     </li>
 
@@ -67,7 +67,7 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=calendar">
+                        <a href="calendar.php">
                             <i class='bx bx-calendar'></i>
                             <span class="link-name"> Calendar </span>
                         </a>
@@ -136,6 +136,9 @@
         </div>
 
         <section class="home-section">
+
+        <?php include 'header.php'?>
+        
             <div class="wrapper">
                 <div class="text header text-align">
                     <a href="user-profile.php">
@@ -143,17 +146,17 @@
                         <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
                     </a>
                 </div>
-            
+<!--
                 <div class="project">
-                    <?php include 'calendar.php'?>
+                    <?php //include 'calendar.php'?>
                 </div>
 
                 <hr class="separator">
 
                 <div class="project">
-                <?php include 'new-project.php'?>
+                <?php //include 'new-project.php'?>
                 </div>
-            
+-->
 
             </div>
         </section>                

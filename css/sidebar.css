@@ -20,6 +20,8 @@ a{
   background: #0032A3;
   z-index: 1;
   transition: all 0.5s ease;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .sidebar.close{
@@ -181,6 +183,7 @@ a{
     padding: 12px 0;
     transition: 0.5s ease;
     background: #00257A;
+    border-bottom-right-radius: 25px;
 }
 
 .sidebar.close .logout{
