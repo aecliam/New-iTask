@@ -135,16 +135,12 @@
             </ul>
         </div>
 
-        
-        
-
         <section class="home-section">
         
             <div class="wrapper">
 
             <?php include 'header.php'?>
                 
-            
                  <div class="project">
                     <?php include 'calendar.php'?>
                 </div>
@@ -152,7 +148,7 @@
                 <hr class="separator">
 
                 <div class="project">
-                <?php include 'new-project.php'?>
+                    <?php include 'new-project.php'?>
                 </div>
 
             </div>
