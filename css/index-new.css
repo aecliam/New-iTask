@@ -228,6 +228,7 @@ a{
   background: #FE9900;
   height: 60px;
   left: 0px;
+  display: block;
 }
 
 .text-align{
@@ -321,5 +322,8 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 .separator{
   position: relative;
   width: 95%;
+  margin-top: 5%;
 }
+
+
 
