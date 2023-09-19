@@ -227,11 +227,12 @@ a{
 
 .header{
   width: 100%;
-  position: static;
+  position: absolute;
   background: #FE9900;
   height: 60px;
   left: 0px;
   display: block;
+  border-bottom-right-radius: 15px;
 }
 
 .text-align{
@@ -329,10 +330,9 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 .project{
-  margin: 15px;
   border-radius: 23px;
   background: #ffffff;
-
+  margin-top: 25px;
 }
 
 input{

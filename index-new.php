@@ -135,22 +135,17 @@
             </ul>
         </div>
 
+        
+        
+
         <section class="home-section">
+        
             <div class="wrapper">
-                <div class="text header">
-                    <form method="POST" action="admin_reservation_logs.php">
-                        <input type="search" name="search" placeholder="Search here">
-                        <input type="submit" name="submit" value="Search">
-                    </form>
-                    <div class="text-align">
-                        <a href="user-profile.php">
-                            <i class='bx bx-user'></i>
-                            <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
-                        </a>
-                    </div>
-                </div>
+
+            <?php include 'header.php'?>
+                
             
-                <div class="project">
+                 <div class="project">
                     <?php include 'calendar.php'?>
                 </div>
 
@@ -159,7 +154,6 @@
                 <div class="project">
                 <?php include 'new-project.php'?>
                 </div>
-            
 
             </div>
         </section>                
