@@ -136,16 +136,25 @@
         </div>
 
         <section class="home-section">
-            
 
-            <?php include 'header.php'?>
+            <div class="text header text-align">
+                <!-- <form method="POST" action="">
+                    <input type="search" name="search" placeholder="Search here">
+                    <input type="submit" name="submit" value="Search">
+                </form> -->
+
+                <a href="user-profile.php">
+                    <i class='bx bx-user'></i>
+                    <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
+                </a>
+            </div>
             
             <div class="wrapper">
 
-                <form method="POST" action="new-project.php">
-                    <input type="submit" name="sub" value="New Project">
-                </form>
-            
+                <a href="new-project.php">
+                    <button class="button"> New Project </button>
+                </a>
+
                 <table>
                     <tr>
                         <th class="#"> #

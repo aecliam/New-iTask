@@ -136,9 +136,18 @@
         </div>
 
         <section class="home-section">
-            
 
-            <?php include 'header.php'?>
+            <div class="text header text-align">
+                <!-- <form method="POST" action="">
+                    <input type="search" name="search" placeholder="Search here">
+                    <input type="submit" name="submit" value="Search">
+                </form> -->
+
+                <a href="user-profile.php">
+                    <i class='bx bx-user'></i>
+                    <span class="link-name" href="user-profile.php"> User Account </span> <!-- change to user account, fetch from db -->
+                </a>
+            </div>
             
             <div class="wrapper">
 
@@ -217,7 +226,7 @@
 				<div>
 					<div>
 						<button form="manage-project"> Save </button>
-						<button type="button" onclick="location.href='index.php?page=project_list'"> Cancel </button>
+						<button type="button" onclick="location.href='project-list.php"> Cancel </button>
 					</div>
 				</div>
 			</div>
@@ -258,5 +267,21 @@
 			<div class="progress-bar-inner" style="width: <?php echo $progress; ?>%"></div>
 		</div>-->
 
-	</body>
+        <script>
+            let arrow = document.querySelectorAll(".arrow");
+            for (var i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e)=>{
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+                    });
+            }
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarBtn = document.querySelector(".bx-menu");
+            console.log(sidebarBtn);
+            sidebarBtn.addEventListener("click", ()=>{
+                sidebar.classList.toggle("close");
+            });
+        </script>
+    </body>
+    
 </html>
