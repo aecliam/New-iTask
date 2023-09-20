@@ -38,18 +38,18 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=task_list">
+                        <a href="task-list.php">
                             <i class='bx bx-pin'></i>
                             <span class="link-name"> Tasks </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=tasks"> Tasks </span>
+                            <li><a class="link_name" href="task-list.php"> Tasks </span>
                         </ul>
                     </li>
 
                     <li>
                         <div class="iocn-link">
-                            <a href="./index-new.php?page=scholars">
+                            <a href="scholars.php">
                                 <i class='bx bx-spreadsheet'></i>
                                 <span class="link-name "> Scholars </span>
                             </a>
@@ -67,7 +67,7 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=calendar">
+                        <a href="calendar.php">
                             <i class='bx bx-calendar'></i>
                             <span class="link-name"> Calendar </span>
                         </a>
@@ -77,12 +77,12 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=inbox">
+                        <a href="chat.php">
                             <i class='bx bx-message'></i>
                             <span class="link-name"> Inbox </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=inbox"> Inbox </span>
+                            <li><a class="link_name" href="chat.php"> Inbox </span>
                         </ul>
                     </li>
 
@@ -99,22 +99,22 @@
                 
                 <hr>
                     <li>
-                        <a href="./index-new.php?page=user_list">
+                        <a href="user_list.php">
                             <i class='bx bx-user'></i>
                             <span class="link-name"> Users </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=user_list"> Users </span>
+                            <li><a class="link_name" href="user_list.php"> Users </span>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=archive">
+                        <a href="archive.php">
                             <i class='bx bx-archive'></i>
                             <span class="link-name"> Archives </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=archive"> Archives </span>
+                            <li><a class="link_name" href="archive.php"> Archives </span>
                         </ul>
                     </li>
                 
@@ -153,18 +153,17 @@
 
 				<form method="POST" action="project-list.php">
                     <div>
-                        <table>
+                        <table border="1">
                             <tr>
-                            <th> <input name="title" placeholder="Untitled Project" type="text"/>
-
-                            <th>
-                                <label for=""> Status </label>
-                                    <select name="status" id="status">
-                                        <option value="0"> Pending </option>
-                                        <option value="3"> On-Hold </option>
-                                        <option value="5"> Done </option>
-                                    </select>
-                            </th>
+                                <th><input name="title" placeholder="Untitled Project" type="text"></th>
+                                <th>
+                                    <label for=""> Status </label>
+                                        <select name="status" id="status">
+                                            <option value="0"> Pending </option>
+                                            <option value="3"> On-Hold </option>
+                                            <option value="5"> Done </option>
+                                        </select>
+                                </th>
                             </tr>
 
                             <tr>
@@ -176,50 +175,43 @@
                                     <label for=""> End Date </label>
                                     <input type="date" autocomplete="off" name="end_date">
                                 </td>
-                            </tr>
-                    </div>
-                    </div>
+                            </tr>     
 
-                    <div>
-                    <div>
-                        <div>
-                        <label for=""> Project Lead </label>
-                        <select name="manager_id">
-                            <option></option>
+                            <tr>
+                                <td>
+                                    <label for=""> Project Lead </label>
+                                    <select name="manager_id">
+                                        <option></option>
+                                    
+                                        <option></option>
+
+                                    </select>
+
+                                    <input type="hidden" name="manager_id">
+                                </td>
+                                <td>
+                                    <label for=""> Project Team Members </label>
+                                    <select name="member_id">
+                                        <option></option>
+                                    
+                                        <option></option>
+
+                                    </select>
+
+                                    <input type="hidden" name="member_id">
+                                </td>
                         
-                            <option></option>
 
-                        </select>
-                        </div>
-                    </div>
-
-                    <input type="hidden" name="manager_id">
-
-                    <div>
-                        <div>
-                        <label for=""> Project Team Members </label>
-                        
-                        </div>
-                    </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>
                                 <label for=""> Description </label>
                                 <textarea name="description" cols="30" rows="10" class="summernote form-control">
                                     
                                 </textarea>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-                    </div>
-                    <div>
-                        <div>
+
+
+
                             <button form="manage-project"> Save </button>
                             <button type="button" onclick="location.href='project-list.php'"> Cancel </button>
-                        </div>
-                    </div>
+
                 </table>
             </div>
 

@@ -28,28 +28,28 @@
 
                 <hr> 
                     <li>
-                        <a href="./index-new.php?page=project_list">
+                        <a href="project-list.php">
                             <i class='bx bx-collection'></i>
                             <span class="link-name"> Projects </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=project_list"> Projects </a></li>
+                            <li><a class="link_name" href="project-list.php"> Projects </a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=task_list">
+                        <a href="task-list.php">
                             <i class='bx bx-pin'></i>
                             <span class="link-name"> Tasks </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=tasks"> Tasks </span>
+                            <li><a class="link_name" href="task-list.php"> Tasks </span>
                         </ul>
                     </li>
 
                     <li>
                         <div class="iocn-link">
-                            <a href="./index-new.php?page=scholars">
+                            <a href="scholars.php">
                                 <i class='bx bx-spreadsheet'></i>
                                 <span class="link-name "> Scholars </span>
                             </a>
@@ -67,7 +67,7 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=calendar">
+                        <a href="calendar.php">
                             <i class='bx bx-calendar'></i>
                             <span class="link-name"> Calendar </span>
                         </a>
@@ -77,12 +77,12 @@
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=inbox">
+                        <a href="chat.php">
                             <i class='bx bx-message'></i>
                             <span class="link-name"> Inbox </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=inbox"> Inbox </span>
+                            <li><a class="link_name" href="chat.php"> Inbox </span>
                         </ul>
                     </li>
 
@@ -99,22 +99,22 @@
                 
                 <hr>
                     <li>
-                        <a href="./index-new.php?page=user_list">
+                        <a href="user_list.php">
                             <i class='bx bx-user'></i>
                             <span class="link-name"> Users </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=user_list"> Users </span>
+                            <li><a class="link_name" href="user_list.php"> Users </span>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./index-new.php?page=archive">
+                        <a href="archive.php">
                             <i class='bx bx-archive'></i>
                             <span class="link-name"> Archives </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=archive"> Archives </span>
+                            <li><a class="link_name" href="archive.php"> Archives </span>
                         </ul>
                     </li>
                 
@@ -122,6 +122,7 @@
                     
                     <li>
                         <div class="logout">
+                        <!--div class="log"-->
                             <a href="login.php">
                                 <i class='bx bx-log-out'></i>
                                 <span class="link-name"> Logout </span>
@@ -151,7 +152,7 @@
             
             <div class="wrapper">
 
-                    <button class="button" onclick="location.href='new-project.php'"> New Project </button>
+                <button class="button" onclick="location.href='new-project.php'"> New Project </button>
 
                 <table>
                     <tr>

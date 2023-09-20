@@ -23,7 +23,7 @@ a{
   height: 100%;
   width: 220px;
   background: #0032A3;
-  z-index: 100;
+  z-index: 500;
   transition: all 0.5s ease;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -314,7 +314,7 @@ a{
 }
 
 @media (min-width: 768px){
-body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+.content-wrapper{
     /*transition: margin-left .3s ease-in-out;*/
     margin-left: 250px;
 }}
