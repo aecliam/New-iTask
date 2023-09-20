@@ -142,21 +142,21 @@
             
             <div class="wrapper">
 
-            <form method="POST" action="new-project.php">
-                <input class="button" type="submit" name="sub" value="New Project">
-            </form>
+                <form method="POST" action="new-project.php">
+                    <input type="submit" name="sub" value="New Project">
+                </form>
             
-            <table>
-                <tr>
-                    <th class="#"> #
-                    <th> Project Name
-                    <th> Start Date
-                    <th> End Date
-                    <th> Status
-                    <th> Priority
-                    <th> Action    
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <th class="#"> #
+                        <th> Project Name
+                        <th> Start Date
+                        <th> End Date
+                        <th> Status
+                        <th> Priority
+                        <th> Action    
+                    </tr>
+                </table>
             </div>
         </section>                
 
