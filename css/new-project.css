@@ -334,10 +334,10 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
   background: #ffffff;
 }
 
-input{
+/*input{
   border-radius: 10px;
   stroke: .5px;
-}
+}*/
 
 table{
     background-color: #ffffff;
@@ -346,9 +346,11 @@ table{
     margin-top: 2%;
     border-collapse: collapse;
     width: 93%;
+    max-width: 50%;
     color: #000000;
     font-size: 15px;
     text-align: center;
+    border: none;
 }
 
 th{

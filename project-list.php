@@ -151,19 +151,17 @@
             
             <div class="wrapper">
 
-                <a href="new-project.php">
-                    <button class="button"> New Project </button>
-                </a>
+                    <button class="button" onclick="location.href='new-project.php'"> New Project </button>
 
                 <table>
                     <tr>
-                        <th class="#"> #
-                        <th> Project Name
-                        <th> Start Date
-                        <th> End Date
-                        <th> Status
-                        <th> Priority
-                        <th> Action    
+                        <th class="#"> # </th>
+                        <th> Project Name </th>
+                        <th> Start Date </th>
+                        <th> End Date </th>
+                        <th> Status </th>
+                        <th> Priority </th>
+                        <th> Action </th>
                     </tr>
                 </table>
             </div>

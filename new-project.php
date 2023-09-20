@@ -28,12 +28,12 @@
 
                 <hr> 
                     <li>
-                        <a href="./index-new.php?page=project_list">
+                        <a href="project-list.php">
                             <i class='bx bx-collection'></i>
                             <span class="link-name"> Projects </span>
                         </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="./index-new.php?page=project_list"> Projects </a></li>
+                            <li><a class="link_name" href="project-list.php"> Projects </a></li>
                         </ul>
                     </li>
 
@@ -151,85 +151,77 @@
             
             <div class="wrapper">
 
-				<form action="" id="manage-project">
+				<form method="POST" action="project-list.php">
+                    <div>
+                        <table>
+                            <tr>
+                            <th> <input name="title" placeholder="Untitled Project" type="text"/>
 
-				<input type="hidden" name="id">
-				<div>
-					<div class="text">
-						<div>
-							<input name="title" placeholder="Untitled Project" type="text"/>
-						</div>
-					</div>
+                            <th>
+                                <label for=""> Status </label>
+                                    <select name="status" id="status">
+                                        <option value="0"> Pending </option>
+                                        <option value="3"> On-Hold </option>
+                                        <option value="5"> Done </option>
+                                    </select>
+                            </th>
+                            </tr>
 
-					<div>
-						<div class="status">
-							<label for=""> Status </label>
-								<select name="status" id="status">
-									<option value="0"> Pending </option>
-									<option value="3"> On-Hold </option>
-									<option value="5"> Done </option>
-								</select>
-						</div>
-					</div>
-				</div>
+                            <tr>
+                                <td>
+                                    <label for=""> Start Date </label>
+                                    <input type="date" autocomplete="off" name="start_date">
+                                </td>  
+                                <td>
+                                    <label for=""> End Date </label>
+                                    <input type="date" autocomplete="off" name="end_date">
+                                </td>
+                            </tr>
+                    </div>
+                    </div>
 
-				<div>
-					<div>
-					<div class="startdate">
-					<label for=""> Start Date </label>
-					<input type="date" autocomplete="off" name="start_date">
-					</div>
-				</div>
+                    <div>
+                    <div>
+                        <div>
+                        <label for=""> Project Lead </label>
+                        <select name="manager_id">
+                            <option></option>
+                        
+                            <option></option>
 
-				<div>
-					<div class="enddate">
-					<label for=""> End Date </label>
-					<input type="date" autocomplete="off" name="end_date">
-					</div>
-				</div>
-				</div>
+                        </select>
+                        </div>
+                    </div>
 
-				<div>
-				<div>
-					<div>
-					<label for=""> Project Manager </label>
-					<select name="manager_id">
-						<option></option>
-					
-						<option></option>
+                    <input type="hidden" name="manager_id">
 
-					</select>
-					</div>
-				</div>
-
-				<input type="hidden" name="manager_id">
-
-				<div>
-					<div>
-					<label for=""> Project Team Members </label>
-					
-					</div>
-				</div>
-				</div>
-				<div>
-					<div>
-						<div>
-							<label for=""> Description </label>
-							<textarea name="description" id="" cols="30" rows="10" class="summernote form-control">
-								
-							</textarea>
-						</div>
-					</div>
-				</div>
-				</form>
-				</div>
-				<div>
-					<div>
-						<button form="manage-project"> Save </button>
-						<button type="button" onclick="location.href='project-list.php"> Cancel </button>
-					</div>
-				</div>
-			</div>
+                    <div>
+                        <div>
+                        <label for=""> Project Team Members </label>
+                        
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <label for=""> Description </label>
+                                <textarea name="description" cols="30" rows="10" class="summernote form-control">
+                                    
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+                    <div>
+                        <div>
+                            <button form="manage-project"> Save </button>
+                            <button type="button" onclick="location.href='project-list.php'"> Cancel </button>
+                        </div>
+                    </div>
+                </table>
+            </div>
 
 
 		<!-- For progress bar -->
