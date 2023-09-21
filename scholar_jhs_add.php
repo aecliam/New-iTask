@@ -73,18 +73,17 @@
                 <!-- Last Name -->
                 <div>
                   	<label>Lastname</label>
-
                   	<div>
                     	<input type="text" name="lastname" required>
                   	</div>
                 </div>
                 <!-- Address -->
-                <div">
-                  	<label>Address</label>
-
-                  	<div>
+                <div>
+                  	<label>Street</label> 
+                  	<div> 
                       <textarea name="address"></textarea>
                   	</div>
+
                 </div>
                 <!-- Birth Date -->
                 <div>
@@ -136,7 +135,8 @@
                 <div>
                   	<label>Photo(2x2)</label>
                   	<div>
-                      
+                    <input class="box-upload" type="file" id="file" name="photo">
+                      <label class="upload" for="file"> Upload File</label>
                   	</div>
                 </div>
                 <!-- Proof of Current Enrollment/Certificate of Registration -->
@@ -151,7 +151,7 @@
                 <div>
                   	<label>Latest Report Card/Grades Slip</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <input class="box-upload" type="file" id="file" name="rep_card">
                     <label class="upload" for="file"> Upload File</label>
                   	</div>
                 </div>
@@ -159,7 +159,7 @@
                 <div>
                   	<label>Valid ID or School ID</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <input class="box-upload" type="file" id="file" name="valid_id">
                     <label class="upload" for="file"> Upload File</label>
                   	</div>
                 </div>
@@ -167,7 +167,7 @@
                 <div>
                   	<label>Barangay Certificate</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <input class="box-upload" type="file" id="file" name="brngy_cert">
                     <label class="upload" for="file"> Upload File</label>
                   	</div>
                 </div>
@@ -175,7 +175,7 @@
                 <div>
                   	<label>Certificate of Eligibility issued by the MSWDO</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <input class="box-upload" type="file" id="file" name="cert_elig">
                     <label class="upload" for="file"> Upload File</label>
                   	</div>
                 </div>
