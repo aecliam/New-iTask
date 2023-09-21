@@ -344,3 +344,18 @@ tbody {
     z-index: 820;
 }
 
+.box-upload {
+    display: none;
+}
+
+.upload {
+    height: 100px;
+    width: 150px;
+    border-radius: 6 px;
+    border: 1px dashed #999;
+}
+
+.upload:hover {
+    color: #de0611;
+    border: 1px dashed #de0611;
+}
