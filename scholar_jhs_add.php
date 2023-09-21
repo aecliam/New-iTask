@@ -39,9 +39,6 @@
 	}
 ?>
 
-<html>
-<<<<<<< HEAD
-
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
@@ -55,12 +52,6 @@
     </head>
     <body>
         <div class="content-wrapper">
-=======
-  <body>
-  <?php include 'sidebar.php'; ?>
-  <div  class="sidebar open">
-
->>>>>>> b693b1757c5d2bfc27fcc2ecdeeb84df1d34519b
         <h4><b>Add Student</b></h4>
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST">
@@ -139,7 +130,55 @@
                         <option value="Grade 10">Grade 10</option>
                       </select>
                     </div>
-                </div>                
+                </div>  
+                
+                <!-- Photo -->
+                <div>
+                  	<label>Photo(2x2)</label>
+                  	<div>
+                      
+                  	</div>
+                </div>
+                <!-- Proof of Current Enrollment/Certificate of Registration -->
+                <div>
+                  	<label>Certificate of Registration</label>
+                  	<div>
+                      <input class="box-upload" type="file" id="file" name="cert_regs">
+                      <label class="upload" for="file"> Upload File</label>
+                  	</div>
+                </div>
+                <!-- Latest Report Card/Grades Slip -->
+                <div>
+                  	<label>Latest Report Card/Grades Slip</label>
+                  	<div>
+                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <label class="upload" for="file"> Upload File</label>
+                  	</div>
+                </div>
+                <!-- Valid ID or School ID -->
+                <div>
+                  	<label>Valid ID or School ID</label>
+                  	<div>
+                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <label class="upload" for="file"> Upload File</label>
+                  	</div>
+                </div>
+                <!-- Barangay Certificate -->
+                <div>
+                  	<label>Barangay Certificate</label>
+                  	<div>
+                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <label class="upload" for="file"> Upload File</label>
+                  	</div>
+                </div>
+                <!-- Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO -->
+                <div>
+                  	<label>Certificate of Eligibility issued by the MSWDO</label>
+                  	<div>
+                    <input class="box-upload" type="file" id="file" name="cert_regs">
+                    <label class="upload" for="file"> Upload File</label>
+                  	</div>
+                </div>
                 <!-- Buttons -->
           	<div>
             	<button type="button" onclick="history.back()">Back</button>
@@ -149,9 +188,5 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-=======
-</div>
->>>>>>> b693b1757c5d2bfc27fcc2ecdeeb84df1d34519b
 </body>
 </html>
