@@ -155,22 +155,10 @@
 				<button class="button" onclick="location.href='new-project.php'"> New Project </button>
 
 					<table id="list">
-						<colgroup>
-							<col width="5%">
-							<col width="15%">
-							<col width="20%">
-							<col width="15%">
-							<col width="15%">
-							<col width="10%">
-							<col width="10%">
-							<col width="10%">
-						</colgroup>
-						<thead>
+		
 							<tr>
-								<th> # </th>
 								<th> Project </th>
 								<th> Task </th>
-								<th> Project Started </th>
 								<th> Project Due Date </th>
 								<th> Project Status </th>
 								<th> Task Status </th>
