@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <!--<title>  </title>-->
+        <title>  </title>
         <link rel="stylesheet" type="text/css" href="css/index-new.css"/>
         <link rel="stylesheet" type="text/css" href="css/scholar.css"/>
 
@@ -13,7 +13,9 @@
     </head>
 <body>
 <div class="content-wrapper">
-<section class="content-header">
+<section class="home-section content-header">
+
+
     <h1>
         Scholar List (Junior Highschool)
     </h1>
@@ -53,5 +55,21 @@
                     ?>
             </tbody>
         </table>    
+
+        <script>
+            let arrow = document.querySelectorAll(".arrow");
+            for (var i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e)=>{
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+                    });
+            }
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarBtn = document.querySelector(".bx-menu");
+            console.log(sidebarBtn);
+            sidebarBtn.addEventListener("click", ()=>{
+                sidebar.classList.toggle("close");
+            });
+        </script>
 </body>
 </html>
