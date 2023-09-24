@@ -133,7 +133,7 @@ table {
 table {
     display: table;
     border-collapse: separate;
-    border-radius: 15px;
+    
     box-sizing: border-box;
     text-indent: initial;
     border-spacing: 2px;
