@@ -344,7 +344,7 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 table{
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 5px;
+    padding: 2px;
     margin-top: 2%;
     border-collapse: collapse;
     width: 93%;
@@ -353,13 +353,40 @@ table{
     text-align: center;
 }
 
-tr{
-    padding: 5%;
+td{
+    padding: 1%;
 }
 
 th{
     padding: 10px;
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+input[type=text]:focus {
+    border: 1px solid #858585;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    transition: 0.5s;
+    outline: none;
+  }
+
 
 .title{
   border: 0;

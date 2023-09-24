@@ -155,13 +155,13 @@
                     <h1> Add Junior High School Student </h1>
                     <form method="$_POST">
 
-                        <table border="1">
+                        <table>
                             <tr>                         
                                 <th colspan="5"> Personal Information
                             </tr>
 
                             <tr>
-                                <td rowspan="4"> <input class="box-upload" type="file" id="previewImage" name="photo" accept=".jpg, .jpeg, .png" style="max-width: 200px; max-height: 200px;">
+                                <td rowspan="4" style="border: 1px solid #b8b8b8;"> <input type="file" id="previewImage" name="photo" accept=".jpg, .jpeg, .png" alt="Preview" style="max-width: 100px; max-height: 100px;">
                                 <td><input type="text" name="firstname" placeholder="First Name">
                                 <td><input type="text" name="middletname" placeholder="Middle Name">
                                 <td><input type="text" name="lastname" placeholder="Last Name">
@@ -169,7 +169,7 @@
                             </tr>
 
                             <tr>
-                                <th colspan="4"> Address </th>
+                                <th colspan="5"> Address </th>
                             </tr>
 
                             <tr>
@@ -187,7 +187,7 @@
                             </tr>
 
                             <tr>
-                                <td><label class="upload" for="file"> Upload File </label>
+                                <td><label class="upload" for="file"> Upload 2x2 Pic </label>
                                 <td><input type="text" name="email" placeholder="Birthdate" required>
                                 <td><select name="gender" placeholder="- Select -" required>
                                         <option value="Male"> Male </option>
@@ -272,43 +272,43 @@
         
         <?php
 
-        include 'conn.php';
-        // include 'index-new.php';
+            include 'conn.php';
+            // include 'index-new.php';
 
-        if(isset($_POST['add'])){
-          $firstname = $_POST['firstname'];
-          $middlename = $_POST['middlename'];
-          $lastname = $_POST['lastname'];
-          $birthdate = $_POST['birthdate'];
-          $gender = $_POST['gender'];
-          $contact = $_POST['contact'];
-          $address = $_POST['address'];
-          $school = $_POST['school'];
-          $gradelvl = $_POST['gradelvl'];
+            if(isset($_POST['add'])){
+            $firstname = $_POST['firstname'];
+            $middlename = $_POST['middlename'];
+            $lastname = $_POST['lastname'];
+            $birthdate = $_POST['birthdate'];
+            $gender = $_POST['gender'];
+            $contact = $_POST['contact'];
+            $address = $_POST['address'];
+            $school = $_POST['school'];
+            $gradelvl = $_POST['gradelvl'];
 
-          //Automated Scholar ID
-          $letters = '';
-          $numbers = '';
-          foreach (range('A', 'Z') as $char) {
-              $letters .= $char;
-          }
-          for($i = 0; $i < 10; $i++){
-            $numbers .= $i;
-          }
-          $scholar_id = substr(str_shuffle($letters), 0, 3).substr(str_shuffle($numbers), 0, 9);
+            //Automated Scholar ID
+            $letters = '';
+            $numbers = '';
+            foreach (range('A', 'Z') as $char) {
+                $letters .= $char;
+            }
+            for($i = 0; $i < 10; $i++){
+                $numbers .= $i;
+            }
+            $scholar_id = substr(str_shuffle($letters), 0, 3).substr(str_shuffle($numbers), 0, 9);
 
-          $sql = "INSERT INTO scholars_jhs (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, created_on) VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', NOW())";
-          if($conn->query($sql)){
-            echo '<script> alert("Student Added Successfully") </script>';
-          }
-          else{
-            $_SESSION['error'] = $conn->error;
-          }
-        }
-        else{
-              echo '<script> alert("Fill up add form first") </script>';
-        }
-      ?>
+            $sql = "INSERT INTO scholars_jhs (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, created_on) VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', NOW())";
+            if($conn->query($sql)){
+                echo '<script> alert("Student Added Successfully") </script>';
+            }
+            else{
+                $_SESSION['error'] = $conn->error;
+            }
+            }
+            else{
+                echo '<script> alert("Fill up add form first") </script>';
+            }
+        ?>
 
         <script>
             let arrow = document.querySelectorAll(".arrow");
@@ -339,7 +339,7 @@
                     }
                 }
             }
-      imageInput.addEventListener('change', previewSelectedImage);
+            imageInput.addEventListener('change', previewSelectedImage);
         </script>
     </body>    
 </html>
