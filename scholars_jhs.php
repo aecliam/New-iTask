@@ -1,8 +1,8 @@
 <?php include 'conn.php'; ?>
 <?php include 'index-new.php'; ?>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
+    <head> 
+        <meta charset="UTF-8"> 
         <title>  </title>
         <link rel="stylesheet" type="text/css" href="css/index-new.css"/>
         <link rel="stylesheet" type="text/css" href="css/scholar.css"/>
@@ -18,7 +18,7 @@
 
     <h1>
         Scholar List (Junior Highschool)
-    </h1>
+</h1>
 </section>
 <section class="content">
     <div class="box-header with-border">
@@ -46,7 +46,7 @@
                 ?>
                     <tr>
                     <td><?php echo $row['Scholar_ID']; ?></td>
-                    <td><a href="scholar_jhs_view.php" data-id="<?php echo $row['ID']; ?>"> <?php echo $row['Last_Name'].', '.$row['First_Name'].' '.$row['Middle_Name']; ?> </a> </td>
+                    <td><a href="scholar_jhs_view.php" data-id="<?php echo $row['id']; ?>"> <?php echo $row['Last_Name'].', '.$row['First_Name'].' '.$row['Middle_Name']; ?> </a> </td>
                     <td><?php echo $row['School'] ?></td>
                     <td><?php echo $row['Grade_Level'] ?></td>
                     </tr>
