@@ -12,8 +12,14 @@
         $gender = $_POST['gender'];
         $contact = $_POST['contact'];
         $address = $_POST['address'];
-		$school = $_POST['school'];
-		$gradelvl = $_POST['gradelvl'];
+		    $school = $_POST['school'];
+		    $gradelvl = $_POST['gradelvl'];
+        $photo = $_POST['photo'];
+        $reg = $_POST['cert_regs'];
+        $card = $_POST['rep_card'];
+        $valid_id = $_POST['valid_id'];
+        $bgy_cert = $_POST['bgy_cert'];
+        $payslip = $_POST['payslip'];
 
 		//Automated Scholar ID
 		$letters = '';
@@ -26,16 +32,14 @@
 		}
 		$scholar_id = substr(str_shuffle($letters), 0, 3).substr(str_shuffle($numbers), 0, 9);
 
-		$sql = "INSERT INTO scholars_jhs (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, created_on) VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', NOW())";
+		$sql = "INSERT INTO scholars_jhs (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, photo, registration, report_card, valid_id, bgy_cert, payslip) 
+    VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', '$photo', '$reg', '$card', '$valid_id', '$bgy_cert', '$payslip')";
 		if($conn->query($sql)){
 			echo '<script> alert("Student Added Successfully") </script>';
 		}
 		else{
 			$_SESSION['error'] = $conn->error;
 		}
-	}
-	else{
-        echo '<script> alert("Fill up add form first") </script>';
 	}
 ?>
 
@@ -79,7 +83,7 @@
                 </div>
                 <!-- Address -->
                 <div>
-                  	<label>Street</label> 
+                  	<label>Home Address</label> 
                   	<div> 
                       <textarea name="address"></textarea>
                   	</div>
@@ -135,56 +139,51 @@
                 <div>
                   	<label>Photo(2x2)</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="photo">
-                      <label class="upload" for="file"> Upload File</label>
+                    <input type="file" id="file" name="photo">
                   	</div>
                 </div>
                 <!-- Proof of Current Enrollment/Certificate of Registration -->
                 <div>
                   	<label>Certificate of Registration</label>
                   	<div>
-                      <input class="box-upload" type="file" id="file" name="cert_regs">
-                      <label class="upload" for="file"> Upload File</label>
+                      <input type="file" id="file" name="cert_regs">
                   	</div>
                 </div>
                 <!-- Latest Report Card/Grades Slip -->
                 <div>
-                  	<label>Latest Report Card/Grades Slip</label>
+                  	<label>Latest Report Card or Grades Slip</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="rep_card">
-                    <label class="upload" for="file"> Upload File</label>
+                    <input type="file" id="file" name="rep_card">
                   	</div>
                 </div>
                 <!-- Valid ID or School ID -->
                 <div>
                   	<label>Valid ID or School ID</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="valid_id">
-                    <label class="upload" for="file"> Upload File</label>
+                    <input type="file" id="file" name="valid_id">
                   	</div>
                 </div>
                 <!-- Barangay Certificate -->
                 <div>
                   	<label>Barangay Certificate</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="brngy_cert">
-                    <label class="upload" for="file"> Upload File</label>
+                    <input type="file" id="file" name="bgy_cert">
                   	</div>
                 </div>
                 <!-- Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO -->
                 <div>
-                  	<label>Certificate of Eligibility issued by the MSWDO</label>
+                  	<label>Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO</label>
                   	<div>
-                    <input class="box-upload" type="file" id="file" name="cert_elig">
-                    <label class="upload" for="file"> Upload File</label>
+                    <input type="file" id="file" name="payslip">
                   	</div>
                 </div>
                 <!-- Buttons -->
           	<div>
             	<button type="button" onclick="history.back()">Back</button>
-            	<button type="submit" href="scholars_jhs.php" name="add">Save</button>
+            	<button type="submit" onclick="scholars_jhs.php" name="add">Save</button>
+            </div>
             	</form>
-          	</div>
+
         </div>
     </div>
 </div>
