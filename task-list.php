@@ -196,7 +196,6 @@
 					</table>
 				</div>
 			</div>
-		
 		<style>
 			table p{
 				margin: unset !important;
