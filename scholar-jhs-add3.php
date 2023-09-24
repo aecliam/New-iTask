@@ -261,8 +261,8 @@
                             <!-- Buttons -->
                                 <tr>
                                     <td colspan="5">
-                                        <button type="button" onclick="history.back()"> Back </button>
-                                        <button type="submit" onclick="scholars_jhs.php" name="add"> Save </button>
+                                        <button class="button" type="button" onclick="history.back()"> Back </button>
+                                        <button class="button" type="submit" onclick="scholars_jhs.php" name="add"> Save </button>
                                 </tr>
                             </tr>
                         </form>
