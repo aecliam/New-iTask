@@ -161,7 +161,9 @@
                             </tr>
 
                             <tr>
-                                <td rowspan="4" style="border: 1px solid #b8b8b8;"> <input type="file" id="previewImage" name="photo" accept=".jpg, .jpeg, .png" alt="Preview" style="max-width: 100px; max-height: 100px;">
+                                <td rowspan="4" style="border: 1px solid #b8b8b8;">
+                                <input type="file" id="pic" name="pic" onchange="previewImage(event, 'picPreview')">
+                                    <img id="picPreview" src="" alt="Image Preview" style="display: none;"/>
                                 <td><input type="text" name="firstname" placeholder="First Name">
                                 <td><input type="text" name="middletname" placeholder="Middle Name">
                                 <td><input type="text" name="lastname" placeholder="Last Name">
@@ -228,35 +230,33 @@
 
                             <!-- Proof of Current Enrollment/Certificate of Registration -->
                             <tr>
-                                <tr>
-                                    <td colspan="3"><label> Certificate of Registration </label>
-                                    <td colspan="2"><input type="file" id="file" name="cert_regs">
-                                </tr>
+                                <td colspan="3"><label>Certificate of Registration</label></td>
+                                <td colspan="2"><input type="file" id="cert_regs" name="cert_regs"></td>
+                            </tr>
 
-                            <!-- Latest Report Card/Grades Slip -->
-                                <tr>
-                                    <td colspan="3"><label> Latest Report Card or Grades Slip </label>                  	        
-                                    <td colspan="2"><input type="file" id="file" name="rep_card">
-                                </tr>
+                            <!-- Latest Report Card or Grades Slip -->
+                            <tr>
+                                <td colspan="3"><label>Latest Report Card or Grades Slip</label></td>
+                                <td colspan="2"><input type="file" id="rep_card" name="rep_card"></td>
+                            </tr>
 
                             <!-- Valid ID or School ID -->
-                                <tr>
-                                    <td colspan="3"><label> Valid ID or School ID </label>
-                                    <td colspan="2"><input type="file" id="file" name="valid_id">
-
-                                </tr>
+                            <tr>
+                                <td colspan="3"><label>Valid ID or School ID</label></td>
+                                <td colspan="2"><input type="file" id="valid_id" name="valid_id"></td>
+                            </tr>
 
                             <!-- Barangay Certificate -->
-                                <tr>
-                                    <td colspan="3"><label> Barangay Certificate </label>
-                                    <td colspan="2"><input type="file" id="file" name="bgy_cert">
-                                </tr>
+                            <tr>
+                                <td colspan="3"><label>Barangay Certificate</label></td>
+                                <td colspan="2"><input type="file" id="bgy_cert" name="bgy_cert"></td>
+                            </tr>
 
                             <!-- Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO -->
-                                <tr>
-                                    <td colspan="3"><label> Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO </label>
-                                    <td colspan="2"><input type="file" id="file" name="payslip">
-                                </tr>
+                            <tr>
+                                <td colspan="3"><label>Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO</label></td>
+                                <td colspan="2"><input type="file" id="payslip" name="payslip"></td>
+                            </tr>
 
                             <!-- Buttons -->
                                 <tr>
@@ -327,21 +327,44 @@
 
             // image preview
 
-            const imageInput = document.getElementById('imageInput');
-            const previewImage = document.getElementById('previewImage');
-            function previewSelectedImage() {
-                const file = imageInput.files[0];
-                if (file) {
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = function(e) {
-                    previewImage.src = e.target.result;
-                    }
-                }
+            function previewImage(event, previewId) {
+                var reader = new FileReader();
+                reader.onload = function(){
+                    var output = document.getElementById(previewId);
+                    output.src = reader.result;
+                    output.style.display = 'block';
+                };
+                reader.readAsDataURL(event.target.files[0]);
             }
-            imageInput.addEventListener('change', previewSelectedImage);
+
+            document.getElementById('uploadForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var formData = new FormData(this);
+                fetch('upload.php', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => response.text())
+                .then(data => {
+                    console.log(data);
+                    // After saving the image, you can do something here
+                }).catch(error => {
+                    console.error(error);
+                });
+            });
         </script>
     </body>    
 </html>
 
-
+<?/*php 
+if(isset($_FILES['pic'])){
+    $file = $_FILES['pic'];
+    $uploadDir = 'uploads/';
+    $uploadFile = $uploadDir . basename($file['name']);
+    if(move_uploaded_file($file['tmp_name'], $uploadFile)){
+        echo "File is valid, and was successfully uploaded.\n";
+    } else {
+        echo "Possible file upload attack!\n";
+    }
+}
+// Repeat the above code for each file input
+?>
