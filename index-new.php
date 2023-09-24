@@ -58,11 +58,11 @@
                         <ul class="sub-menu">
                             <li><a href="scholars_jhs.php"> Junior Highschool </a></li>
                             <li><a href="scholars_shs.php"> Senior Highschool </a></li>
-                            <li><a href="scholars_clg.php"> College </a></li>
+                            <li><a href="scholars_college.php"> College </a></li>
                             <li><a href="scholars_grad.php"> Graduate School </a></li>
                             <li><a href="scholars_als.php"> ALS </a></li>
-                            <li><a href="scholars_ath.php"> Athlete </a></li>
-                            <li><a href="scholars_art.php"> Artist </a></li>
+                            <li><a href="scholars_athlete.php"> Athlete </a></li>
+                            <li><a href="scholars_artist.php"> Artist </a></li>
                         </ul>
                     </li>
 
