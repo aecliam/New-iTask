@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <!--<title>  </title>-->
-        <link rel="stylesheet" type="text/css" href="css/project-list.css"/>
+        <link rel="stylesheet" type="text/css" href="css/scholar-jhs-add.css"/>
 
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -151,121 +151,122 @@
             </div>
             
             <div class="wrapper">
+                <div class="add">
+                    <h1> Add Junior High School Student </h1>
+                    <form method="$_POST">
 
-            <h1> Add Student </h1>
-            <form method="$_POST">
+                        <table border="1">
+                            <tr>                         
+                                <th colspan="5"> Personal Information
+                            </tr>
 
-                <table border="1">
-                    <tr>                         
-                        <th colspan="5"> Personal Information
-                    </tr>
+                            <tr>
+                                <td rowspan="4"> <input class="box-upload" type="file" id="previewImage" name="photo" accept=".jpg, .jpeg, .png" style="max-width: 200px; max-height: 200px;">
+                                <td><input type="text" name="firstname" placeholder="First Name">
+                                <td><input type="text" name="middletname" placeholder="Middle Name">
+                                <td><input type="text" name="lastname" placeholder="Last Name">
+                                <td><input type="text" name="suffix" placeholder="Suffix">
+                            </tr>
 
-                    <tr>
-                    <td rowspan="4"> <input class="box-upload" type="file" id="file" name="photo">
-                        <td><input type="text" name="firstname" placeholder="First Name">
-                        <td><input type="text" name="middletname" placeholder="Middle Name">
-                        <td><input type="text" name="lastname" placeholder="Last Name">
-                        <td><input type="text" name="suffix" placeholder="Suffix">
-                    </tr>
+                            <tr>
+                                <th colspan="4"> Address </th>
+                            </tr>
 
-                    <tr>
-                        <th colspan="4"> Address </th>
-                     </tr>
+                            <tr>
+                                <td><input type="text" name="lstreet" placeholder="Lot/Street">
+                                <td><input type="text" name="brgy" placeholder="Baranggay">
+                                <td><input type="text" name="city" placeholder="City">
+                                <td><input type="text" name="zipcode" placeholder="Zip Code">
+                            </tr>
 
-                    <tr>
-                        <td><input type="text" name="lstreet" placeholder="Lot/Street">
-                        <td><input type="text" name="brgy" placeholder="Baranggay">
-                            <td><input type="text" name="city" placeholder="City">
-                            <td><input type="text" name="zipcode" placeholder="Zip Code">
-                    </tr>
+                            <tr>
+                                <th> Birthday </th>
+                                <th> Sex </th>
+                                <th> Contact Number </th>
+                                <th> Email </th>
+                            </tr>
 
-                    <tr>
-                        <th> Birthday </th>
-                        <th> Sex </th>
-                        <th> Contact Number </th>
-                        <th> Email </th>
-                    </tr>
+                            <tr>
+                                <td><label class="upload" for="file"> Upload File </label>
+                                <td><input type="text" name="email" placeholder="Birthdate" required>
+                                <td><select name="gender" placeholder="- Select -" required>
+                                        <option value="Male"> Male </option>
+                                        <option value="Female"> Female </option>
+                                    </select>
+                                <td><input type="text" value="+63" maxlength="13" name="contact">
+                                <td><input type="text" name="email" placeholder="Email" required>
+                            </tr>
+                            
+                            <tr>                         
+                                <th colspan="3"> Education Background
+                                <th colspan="2"> Parent/Guardian
+                            </tr>
 
-                    <tr>
-                        <td> <label class="upload" for="file"> Upload File </label>
-                        <td><input type="text" name="email" placeholder="Birthdate" required>
-                        <td><select name="gender" placeholder="- Select -" required>
-                                <option value="Male"> Male </option>
-                                <option value="Female"> Female </option>
-                        </select>
-                        <td><input type="text" value="+63" maxlength="13" name="contact">
-                        <td><input type="text" name="email" placeholder="Email" required>
-                    </tr>
-                    
-                    <tr>                         
-                        <th colspan="3"> Education Background
-                        <th colspan="2"> Parent/Guardian
-                    </tr>
+                            <tr>
+                                <th colspan="2"> School Attended </th>
+                                <th> Grade Level </th>
+                                <th> Name </th>
+                                <th> Contact Number </th>
+                            </tr>
 
-                    <tr>
-                        <th colspan="2"> School Attended </th>
-                        <th> Grade Level </th>
-                        <th> Name </th>
-                        <th> Contact Number </th>
-                    </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" name="school" placeholder="School" required>
+                                <td>
+                                    <select name="gradelvl" placeholder="- Select -" required>
+                                        <option value="Grade 7"> Grade 7 </option>
+                                        <option value="Grade 8"> Grade 8 </option>
+                                        <option value="Grade 9"> Grade 9 </option>
+                                        <option value="Grade 10"> Grade 10 </option>
+                                    </select>
+                                <td><input type="text" name="pguardian">
+                                <td><input type="text" value="+63" maxlength="13" name="pgcontact">
+                            </tr>
 
-                    <tr>
-                        <td colspan="2"><input type="text" name="school" placeholder="School" required>
-                        <td>
-                            <select name="gradelvl" placeholder="- Select -" required>
-                                <option value="Grade 7"> Grade 7 </option>
-                                <option value="Grade 8"> Grade 8 </option>
-                                <option value="Grade 9"> Grade 9 </option>
-                                <option value="Grade 10"> Grade 10 </option>
-                            </select>
-                        <td><input type="text" name="pguardian">
-                        <td><input type="text" value="+63" maxlength="13" name="pgcontact">
-                    </tr>
+                            <tr>                         
+                                <th colspan="5"> Requirements
+                            </tr>
 
-                    <tr>                         
-                        <th colspan="5"> Requirements
-                    </tr>
+                            <!-- Proof of Current Enrollment/Certificate of Registration -->
+                            <tr>
+                                <tr>
+                                    <td colspan="3"><label> Certificate of Registration </label>
+                                    <td colspan="2"><input type="file" id="file" name="cert_regs">
+                                </tr>
 
-                    <!-- Proof of Current Enrollment/Certificate of Registration -->
-                    <tr>
-                        <tr>
-                  	        <td colspan="3"><label> Certificate of Registration </label>
-                            <td colspan="2"><input type="file" id="file" name="cert_regs">
-                        </tr>
+                            <!-- Latest Report Card/Grades Slip -->
+                                <tr>
+                                    <td colspan="3"><label> Latest Report Card or Grades Slip </label>                  	        
+                                    <td colspan="2"><input type="file" id="file" name="rep_card">
+                                </tr>
 
-                    <!-- Latest Report Card/Grades Slip -->
-                        <tr>
-                            <td colspan="3"><label> Latest Report Card or Grades Slip </label>                  	        
-                            <td colspan="2"><input type="file" id="file" name="rep_card">
-                        </tr>
+                            <!-- Valid ID or School ID -->
+                                <tr>
+                                    <td colspan="3"><label> Valid ID or School ID </label>
+                                    <td colspan="2"><input type="file" id="file" name="valid_id">
 
-                    <!-- Valid ID or School ID -->
-                        <tr>
-                            <td colspan="3"><label> Valid ID or School ID </label>
-                            <td colspan="2"><input type="file" id="file" name="valid_id">
+                                </tr>
 
-                        </tr>
+                            <!-- Barangay Certificate -->
+                                <tr>
+                                    <td colspan="3"><label> Barangay Certificate </label>
+                                    <td colspan="2"><input type="file" id="file" name="bgy_cert">
+                                </tr>
 
-                    <!-- Barangay Certificate -->
-                        <tr>
-                            <td colspan="3"><label> Barangay Certificate </label>
-                            <td colspan="2"><input type="file" id="file" name="bgy_cert">
-                        </tr>
+                            <!-- Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO -->
+                                <tr>
+                                    <td colspan="3"><label> Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO </label>
+                                    <td colspan="2"><input type="file" id="file" name="payslip">
+                                </tr>
 
-                    <!-- Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO -->
-                        <tr>
-                            <td colspan="3"><label> Parent's Pay Slip/Social Case Study/Certificate of Eligibility issued by the MSWDO </label>
-                            <td colspan="2"><input type="file" id="file" name="payslip">
-                        </tr>
-
-                    <!-- Buttons -->
-          	            <tr>
-            	            <td colspan="5">
-                                <button type="button" onclick="history.back()"> Back </button>
-            	                <button type="submit" onclick="scholars_jhs.php" name="add"> Save </button>
-                        </tr>
-                    </tr>
-            	</form>
+                            <!-- Buttons -->
+                                <tr>
+                                    <td colspan="5">
+                                        <button type="button" onclick="history.back()"> Back </button>
+                                        <button type="submit" onclick="scholars_jhs.php" name="add"> Save </button>
+                                </tr>
+                            </tr>
+                        </form>
+                </div>
             </div>
         </section>    
         
@@ -323,6 +324,22 @@
             sidebarBtn.addEventListener("click", ()=>{
                 sidebar.classList.toggle("close");
             });
+
+            // image preview
+
+            const imageInput = document.getElementById('imageInput');
+            const previewImage = document.getElementById('previewImage');
+            function previewSelectedImage() {
+                const file = imageInput.files[0];
+                if (file) {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function(e) {
+                    previewImage.src = e.target.result;
+                    }
+                }
+            }
+      imageInput.addEventListener('change', previewSelectedImage);
         </script>
     </body>    
 </html>

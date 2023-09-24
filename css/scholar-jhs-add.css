@@ -13,7 +13,7 @@ body{
 
 a{
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
 .sidebar{
@@ -217,6 +217,13 @@ a{
     width: 78px;
 }
 
+.sidebar .log{
+  position: relative;
+  margin-top: 177%;
+  border-bottom-right-radius: 25px;
+  background: #00257A;
+}
+
 .home-section{
   position: fixed;
   height: 100vh;
@@ -314,7 +321,7 @@ a{
 }
 
 @media (min-width: 768px){
-.content-wrapper{
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
     /*transition: margin-left .3s ease-in-out;*/
     margin-left: 250px;
 }}
@@ -334,26 +341,51 @@ a{
   background: #ffffff;
 }
 
-/*input{
-  border-radius: 10px;
-  stroke: .5px;
-}*/
-
 table{
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 2px;
-  margin-top: 2%;
-  border-collapse: collapse;
-  width: 93%;
-  max-width: 50%;
-  color: #000000;
-  font-size: 15px;
-  text-align: center;
-  border: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 2%;
+    border-collapse: collapse;
+    width: 93%;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+}
+
+tr{
+    padding: 5%;
 }
 
 th{
     padding: 10px;
 }
+
+.title{
+  border: 0;
+}
+
+.button{
+    margin-top: 90px;
+    margin-left: 84%;
+    font-size: 15px;
+    width: 9%;
+    height: 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: #00A05D;
+    color: #ffffff;
+    
+}
+
+.button:hover{
+    background: #007A31;
+    transition: all 0.4s ease;
+}
+
+.add{
+    margin-top: 80px;
+}
+
+
 
