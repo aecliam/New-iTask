@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <!--<title>  </title>-->
-        <link rel="stylesheet" type="text/css" href="css/scholar-jhs-add.css"/>
+        <link rel="stylesheet" type="text/css" href="css/scholars-jhs-add.css"/>
 
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -266,34 +266,38 @@
             // include 'index-new.php';
 
             if(isset($_POST['add'])){
-            $firstname = $_POST['firstname'];
-            $middlename = $_POST['middlename'];
-            $lastname = $_POST['lastname'];
-            $birthdate = $_POST['birthdate'];
-            $gender = $_POST['gender'];
-            $contact = $_POST['contact'];
-            $address = $_POST['address'];
-            $school = $_POST['school'];
-            $gradelvl = $_POST['gradelvl'];
-
-            //Automated Scholar ID
-            $letters = '';
-            $numbers = '';
-            foreach (range('A', 'Z') as $char) {
-                $letters .= $char;
-            }
-            for($i = 0; $i < 10; $i++){
-                $numbers .= $i;
-            }
-            $scholar_id = substr(str_shuffle($letters), 0, 3).substr(str_shuffle($numbers), 0, 9);
-
-            $sql = "INSERT INTO scholars_jhs (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, created_on) VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', NOW())";
-            if($conn->query($sql)){
-                echo '<script> alert("Student Added Successfully") </script>';
-            }
-            else{
-                $_SESSION['error'] = $conn->error;
-            }
+                $firstname = $_POST['firstname'];
+                $middlename = $_POST['middlename'];
+                $lastname = $_POST['lastname'];
+                $birthdate = $_POST['birthdate'];
+                $gender = $_POST['gender'];
+                $contact = $_POST['contact'];
+                $address = $_POST['address'];
+                $school = $_POST['school'];
+                $gradelvl = $_POST['gradelvl'];
+                $photo = $_POST['photo'];
+                $reg = $_POST['cert_regs'];
+                $card = $_POST['rep_card'];
+                $valid_id = $_POST['valid_id'];
+                $bgy_cert = $_POST['bgy_cert'];
+                $payslip = $_POST['payslip'];
+        
+                //Automated Scholar ID
+                $letters = '';
+                $numbers = '';
+                foreach (range('A', 'Z') as $char) {
+                    $letters .= $char;
+                }
+                for($i = 0; $i < 10; $i++){
+                    $numbers .= $i;
+                }
+                $scholar_id = substr(str_shuffle($letters), 0, 3).substr(str_shuffle($numbers), 0, 9);
+        
+                $sql = "INSERT INTO scholars_college (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, photo, registration, report_card, valid_id, bgy_cert, payslip) 
+                    VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', '$photo', '$reg', '$card', '$valid_id', '$bgy_cert', '$payslip')";
+                if($conn->query($sql)){
+                    echo '<script> alert("Student Added Successfully") </script>';
+                }
             }
             else{
                 echo '<script> alert("Fill up add form first") </script>';
