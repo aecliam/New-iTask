@@ -360,16 +360,3 @@
     </body>    
 </html>
 
-<?/*php 
-if(isset($_FILES['pic'])){
-    $file = $_FILES['pic'];
-    $uploadDir = 'uploads/';
-    $uploadFile = $uploadDir . basename($file['name']);
-    if(move_uploaded_file($file['tmp_name'], $uploadFile)){
-        echo "File is valid, and was successfully uploaded.\n";
-    } else {
-        echo "Possible file upload attack!\n";
-    }
-}
-// Repeat the above code for each file input
-?>
