@@ -11,6 +11,10 @@ body{
   background: #F3F1EF;
 }
 
+body, html {
+  overflow: auto;
+}
+
 a{
   text-decoration: none;
   color: #ffffff;
@@ -225,16 +229,16 @@ a{
 }
 
 .home-section{
-  position: fixed;
+  position: absolute;
   height: 100vh;
   left: 255px;
-  width: calc(100% - 200px);
+  width: calc(95% - 190px);
   transition: all 0.5s ease;
+  z-index: -1;
 }
 
 .header{
   width: 100%;
-
   background: #FE9900;
   height: 60px;
   left: 0px;
@@ -345,7 +349,6 @@ table{
     align-content: center;
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 2px;
     margin-top: 2%;
     border-collapse: collapse;
     width: 93%;
@@ -356,6 +359,8 @@ table{
 
 td{
     padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 th{
@@ -415,8 +420,9 @@ select{
     margin-top: 80px;
 }
 
-.img{
-  border: 1 solid
+img{
+  border: 1 solid;
+  border-color: #b8b8b8;;
 }
 
 .date{
@@ -428,5 +434,9 @@ select{
   border-radius: 8px;
   transition: 0.5s;
   outline: none;
+}
+
+tbody{
+  padding: 5%;
 }
 
