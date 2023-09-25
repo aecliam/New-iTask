@@ -162,7 +162,7 @@
 
                             <tr>
                                 <td rowspan="4" style="border: 1px solid #b8b8b8;">
-                                <input type="file" id="pic" name="pic" onchange="previewImage(event, 'picPreview')">
+                                
                                     <img id="picPreview" src="" alt="Image Preview" style="display: none;"/>
                                 <td><input type="text" name="firstname" placeholder="First Name">
                                 <td><input type="text" name="middletname" placeholder="Middle Name">
@@ -189,8 +189,8 @@
                             </tr>
 
                             <tr>
-                                <td><label class="upload" for="file"> Upload 2x2 Pic </label>
-                                <td><input type="text" name="email" placeholder="Birthdate" required>
+                                <td><input style="align-items: center;" type="file" id="pic" name="pic" onchange="previewImage(event, 'picPreview')">
+                                <td><input class="date" type="date" name="bdate" placeholder="Birthdate" required>
                                 <td><select name="gender" placeholder="- Select -" required>
                                         <option value="Male"> Male </option>
                                         <option value="Female"> Female </option>
@@ -220,7 +220,7 @@
                                         <option value="Grade 9"> Grade 9 </option>
                                         <option value="Grade 10"> Grade 10 </option>
                                     </select>
-                                <td><input type="text" name="pguardian">
+                                <td><input type="text" placeholder="Name" name="pguardian">
                                 <td><input type="text" value="+63" maxlength="13" name="pgcontact">
                             </tr>
 
@@ -332,10 +332,13 @@
                 reader.onload = function(){
                     var output = document.getElementById(previewId);
                     output.src = reader.result;
-                    output.style.display = 'block';
+                    output.style.display = '';
+                    output.style.width = '216px'; // Add this line
+                    output.style.height = '216px'; // Add this line
                 };
                 reader.readAsDataURL(event.target.files[0]);
             }
+
 
             document.getElementById('uploadForm').addEventListener('submit', function(e) {
                 e.preventDefault();

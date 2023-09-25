@@ -415,5 +415,18 @@ select{
     margin-top: 80px;
 }
 
+.img{
+  border: 1 solid
+}
 
+.date{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #b8b8b8;
+  border-radius: 8px;
+  transition: 0.5s;
+  outline: none;
+}
 
