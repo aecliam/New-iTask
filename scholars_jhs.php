@@ -26,7 +26,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-                <a href="scholars_jhs_add.php"><button class="btn btn-success btn-sm edit btn-flat" data-id="<?php echo $row['ID']; ?>"> <b>+</b> Add New Student </button></a>
+                <a href="scholars_jhs_add.php"><button class="btn btn-success btn-sm edit btn-flat" data-id="<?php echo $row['id']; ?>"> <b>+</b> Add New Student </button></a>
             </div>
         <div class="box-body">
         <table class="table table-bordered">
@@ -46,7 +46,7 @@
                 ?>
                     <tr>
                     <td><?php echo $row['Scholar_ID']; ?></td>
-                    <td><a href="scholars_jhs_view.php?id=<?php echo $row['id']; ?>" <?php echo $row['Last_Name'].', '.$row['First_Name'].' '.$row['Middle_Name']; ?> </a> </td>
+                    <td><a href="scholars_jhs_view.php?id=<?php echo $row['id']; ?>"> <?php echo $row['Last_Name'].', '.$row['First_Name'].' '.$row['Middle_Name']; ?> </a> </td>
                     <td><?php echo $row['School'] ?></td>
                     <td><?php echo $row['Grade_Level'] ?></td>
                     </tr>
