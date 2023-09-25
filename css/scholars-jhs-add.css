@@ -312,22 +312,22 @@ a{
 }
 
 .navbar #sidebar-close {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .wrapper{
-    left: 0;
-    position: relative;
-    right: 0;
-    top: 0;
-    z-index: 1;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1;
 
 }
 
 @media (min-width: 768px){
 body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
-    /*transition: margin-left .3s ease-in-out;*/
-    margin-left: 250px;
+  /*transition: margin-left .3s ease-in-out;*/
+  margin-left: 250px;
 }}
 
 .content-wrapper>.content {
@@ -346,21 +346,21 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 table{
-    align-content: center;
-    background-color: #ffffff;
-    border-radius: 15px;
-    margin-top: 2%;
-    border-collapse: collapse;
-    width: 93%;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
+  align-content: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 2%;
+  border-collapse: collapse;
+  width: 93%;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
 }
 
 td{
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 th{
@@ -368,30 +368,30 @@ th{
 }
 
 input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px solid #b8b8b8;
-    border-radius: 8px;
-    transition: 0.5s;
-    outline: none;
-  }
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #b8b8b8;
+  border-radius: 8px;
+  transition: 0.5s;
+  outline: none;
+}
   
 input[type=text]:focus {
-    border: 1px solid #858585;
+  border: 1px solid #858585;
 }
 
 select{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px solid #b8b8b8;
-    border-radius: 8px;
-    transition: 0.5s;
-    outline: none;
-  }
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #b8b8b8;
+  border-radius: 8px;
+  transition: 0.5s;
+  outline: none;
+}
 
 
 .title{
@@ -410,12 +410,12 @@ select{
 }
 
 .button:hover{
-    background: #007A31;
-    transition: all 0.4s ease;
+  background: #007A31;
+  transition: all 0.4s ease;
 }
 
 .add{
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 img{
