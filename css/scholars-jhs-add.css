@@ -234,7 +234,7 @@ a{
   left: 255px;
   width: calc(95% - 190px);
   transition: all 0.5s ease;
-  z-index: -1;
+
 }
 
 .header{
@@ -242,7 +242,7 @@ a{
   background: #FE9900;
   height: 60px;
   left: 0px;
-
+  z-index: 5;
   border-bottom-right-radius: 15px;
 }
 
@@ -399,16 +399,14 @@ select{
 }
 
 .button{
-    margin-top: 90px;
-    margin-left: 84%;
-    font-size: 15px;
-    width: 9%;
-    height: 5%;
-    border-radius: 10px;
-    border: none;
-    background-color: #00A05D;
-    color: #ffffff;
-    
+  font-size: 15px;
+  padding: 5px;
+  width: 100px;
+  height: 20%;
+  border-radius: 10px;
+  border: none;
+  background-color: #00A05D;
+  color: #ffffff;
 }
 
 .button:hover{
