@@ -1,5 +1,4 @@
 <?php include 'conn.php'; ?>
-
 <?php include 'index-new.php'; ?>
 <html lang="en" dir="ltr">
     <head> 
@@ -18,7 +17,7 @@
 
 
     <h1>
-        Scholar List (Senior Highschool)
+        Scholar List (Graduate School)
 </h1>
 </section>
 <section class="content">
@@ -27,7 +26,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-                <a href="scholars_shs_add.php"><button class="btn btn-success btn-sm edit btn-flat" data-id="<?php echo $row['ID']; ?>"> <b>+</b> Add New Student </button></a>
+                <a href="scholars_grad_add.php"><button class="btn btn-success btn-sm edit btn-flat" data-id="<?php echo $row['ID']; ?>"> <b>+</b> Add New Student </button></a>
             </div>
         <div class="box-body">
         <table class="table table-bordered">
@@ -41,13 +40,13 @@
             </thead>
             <tbody>
                 <?php
-                    $sql = "SELECT * FROM scholars_shs";
+                    $sql = "SELECT * FROM scholars_grad";
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
                 ?>
                     <tr>
                     <td><?php echo $row['Scholar_ID']; ?></td>
-                    <td><a href="scholars_shs_view.php" data-id="<?php echo $row['id']; ?>"> <?php echo $row['Last_Name'].', '.$row['First_Name'].' '.$row['Middle_Name']; ?> </a> </td>
+                    <td><a href="scholars_grad_view.php" data-id="<?php echo $row['id']; ?>"> <?php echo $row['Last_Name'].', '.$row['First_Name'].' '.$row['Middle_Name']; ?> </a> </td>
                     <td><?php echo $row['School'] ?></td>
                     <td><?php echo $row['Grade_Level'] ?></td>
                     </tr>

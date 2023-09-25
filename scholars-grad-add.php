@@ -32,7 +32,7 @@
 		}
 		$scholar_id = substr(str_shuffle($letters), 0, 3).substr(str_shuffle($numbers), 0, 9);
 
-		$sql = "INSERT INTO scholars_shs (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, photo, registration, report_card, valid_id, bgy_cert, payslip) 
+		$sql = "INSERT INTO scholars_college (Scholar_ID, First_Name, Middle_Name, Last_Name, Birthdate, Gender, Contact, Address, School, Grade_Level, photo, registration, report_card, valid_id, bgy_cert, payslip) 
     VALUES ('$scholar_id', '$firstname', '$middlename', '$lastname', '$birthdate', '$gender', '$contact', '$address', '$school', '$gradelvl', '$photo', '$reg', '$card', '$valid_id', '$bgy_cert', '$payslip')";
 		if($conn->query($sql)){
 			echo '<script> alert("Student Added Successfully") </script>';
@@ -127,21 +127,8 @@
                     <label>Grade Level</label>
                     <div> 
                       <select name="gradelvl" placeholder="- Select -" required>
-                        <option value="Grade 11">Grade 11</option>
-                        <option value="Grade 12">Grade 12</option>
-                      </select>
-                    </div>
-                </div>  
-                <!-- Strand -->
-                <div>
-                    <label>Strand</label>
-                    <div> 
-                      <select name="gradelvl" placeholder="- Select -" required>
-                        <option value="Grade 11">STEM</option>
-                        <option value="Grade 12">HUMSS</option>
-                        <option value="Grade 12">GAS</option>
-                        <option value="Grade 12">ABM</option>
-                        <option value="Grade 12">Others</option>
+                        <option value="Grade 7">Grade 11</option>
+                        <option value="Grade 8">Grade 12</option>
                       </select>
                     </div>
                 </div>  
@@ -191,7 +178,7 @@
                 <!-- Buttons -->
           	<div>
             	<button type="button" onclick="history.back()">Back</button>
-            	<button type="submit" onclick="scholars_shs.php" name="add">Save</button>
+            	<button type="submit" onclick="scholars_college.php" name="add">Save</button>
             </div>
             	</form>
 
