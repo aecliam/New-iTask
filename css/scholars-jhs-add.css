@@ -11,10 +11,6 @@ body{
   background: #F3F1EF;
 }
 
-body, html {
-  overflow: auto;
-}
-
 a{
   text-decoration: none;
   color: #ffffff;
